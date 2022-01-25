@@ -27,6 +27,7 @@ module.exports = {
             muted: colors.darkGray[500],
             link: colors.primary[600],
             white: 'white',
+            black: 'black',
             transparent: 'rgba(0, 0, 0, 0))',
             inherit: 'inherit',
             ring: 'rgb(49 132 253 / 50%)',
@@ -91,8 +92,14 @@ module.exports = {
         require('./variables'),
         require('./common'),
         require('./typography'),
+
+        // core
         require('./close'),
         require('./buttons'),
+        require('./tables'),
+        require('./dots'),
+
+        // composite
         require('./alerts'),
     ],
 };

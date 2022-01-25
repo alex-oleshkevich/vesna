@@ -5,7 +5,7 @@ export default {
 const Template = () => {
     return `
         <h5>Alerts</h5>
-        <div class="example space-y-3">
+        <div class="example">
             <div class="alert alert-info">
                 A simple primary alert—check it out!    
             </div>
@@ -29,7 +29,7 @@ export const Alerts = Template.bind({});
 const WithHeadingTemplate = () => {
     return `
         <h5>Alerts with heading</h5>
-        <div class="example space-y-3">
+        <div class="example">
             <div class="alert alert-info">
                 <header>Hey, watch out!</header>
                 <p>A simple primary alert—check it out!</p>
@@ -57,7 +57,7 @@ export const WithHeading = WithHeadingTemplate.bind({});
 const DismissibleTemplate = () => {
     return `
         <h5>Dismissible alerts</h5>
-        <div class="example space-y-3">
+        <div class="example">
             <div class="alert alert-info alert-dismissible">
                 <header>Hey, watch out!</header>
                 <p>A simple primary alert—check it out!</p>
@@ -89,7 +89,7 @@ export const Dismissible = DismissibleTemplate.bind({});
 const WithBodyActionsTemplate = () => {
     return `
         <h5>Alerts</h5>
-        <div class="example space-y-3">
+        <div class="example">
             <div class="alert alert-info">
                 <header>Hey, watch out!</header>
                 <p>A simple primary alert—check it out!</p>

@@ -50,11 +50,11 @@ module.exports = plugin(function ({ addBase, theme }) {
         'small, .small': {
             fontSize: theme('fontSize.sm'),
         },
-        'ul': {
+        ul: {
             listStyleType: 'disc',
             paddingLeft: theme('space.6'),
         },
-        'ol': {
+        ol: {
             listStyleType: 'decimal',
             paddingLeft: theme('space.6'),
         },
@@ -71,12 +71,12 @@ module.exports = plugin(function ({ addBase, theme }) {
             padding: theme('spacing.1'),
             borderRadius: '4px',
         },
-        'dt': {
-            fontWeight: theme('fontWeight.semibold')
+        dt: {
+            fontWeight: theme('fontWeight.semibold'),
         },
         '.lead': {
             fontSize: theme('fontSize.lg'),
             fontWeight: 300,
-        }
+        },
     });
 });
