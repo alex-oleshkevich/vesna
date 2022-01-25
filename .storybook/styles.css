@@ -8,3 +8,9 @@
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+body {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @apply max-w-7xl;
+}

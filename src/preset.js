@@ -91,7 +91,8 @@ module.exports = {
         require('./variables'),
         require('./common'),
         require('./typography'),
-        require('./buttons'),
         require('./close'),
+        require('./buttons'),
+        require('./alerts'),
     ],
 };
