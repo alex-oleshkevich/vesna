@@ -57,7 +57,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.btn-primary': {
             '--vs-btn-text-color': 'white',
             '--vs-btn-background': theme('colors.primary.500'),
-            fontWeight: theme('fontWeight.semibold'),
             borderColor: 'transparent',
         },
         '.btn-primary:disabled': {
@@ -75,7 +74,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.btn-danger': {
             '--vs-btn-text-color': 'white',
             '--vs-btn-background': theme('colors.red.500'),
-            fontWeight: theme('fontWeight.semibold'),
             borderColor: 'transparent',
         },
         '.btn-danger:disabled': {
@@ -93,7 +91,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.btn-success': {
             '--vs-btn-text-color': 'white',
             '--vs-btn-background': theme('colors.green.500'),
-            fontWeight: theme('fontWeight.semibold'),
             borderColor: 'transparent',
         },
         '.btn-success:disabled': {
@@ -111,7 +108,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.btn-warning': {
             '--vs-btn-text-color': theme('colors.yellow.900'),
             '--vs-btn-background': theme('colors.yellow.500'),
-            fontWeight: theme('fontWeight.semibold'),
             borderColor: 'transparent',
         },
         '.btn-warning:disabled': {
@@ -151,6 +147,21 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
         '.btn-icon.btn-lg': {
             padding: theme('spacing.2'),
+        },
+
+        '.btn-dropdown': {
+            whiteSpace: 'nowrap',
+        },
+        '.btn-dropdown::after': {
+            display: 'inline-block',
+            marginLeft: theme('spacing.2'),
+            verticalAlign: theme('spacing.2'),
+            content: '""',
+            borderTop: `${theme('spacing')["1.5"]} solid`,
+            borderRight: `${theme('spacing')["1.5"]} solid transparent`,
+            borderLeft: `${theme('spacing')["1.5"]} solid transparent`,
+            borderBottom: 0,
+            boxSizing: 'border-box',
         },
     });
 });

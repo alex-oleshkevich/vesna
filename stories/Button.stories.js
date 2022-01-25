@@ -142,3 +142,57 @@ const IconOnlyTemplate = () => {
         `;
 };
 export const IconOnly = IconOnlyTemplate.bind({});
+
+const DropdownTemplate = () => {
+    return `
+        <h5>Default</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-dropdown">Default</button>
+            <button class="btn btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-dropdown">Large</button>
+        </div>
+
+        <h5>Primary</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-primary btn-dropdown">Default</button>
+            <button class="btn btn-primary btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-primary btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-primary btn-dropdown">Large</button>
+        </div>
+
+        <h5>Danger</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-danger btn-dropdown">Default</button>
+            <button class="btn btn-danger btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-danger btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-danger btn-dropdown">Large</button>
+        </div>
+
+        <h5>Success</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-success btn-dropdown">Default</button>
+            <button class="btn btn-success btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-success btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-success btn-dropdown">Large</button>
+        </div>
+
+        <h5>Warning</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-warning btn-dropdown">Default</button>
+            <button class="btn btn-warning btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-warning btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-warning btn-dropdown">Large</button>
+        </div>
+
+        <h5>Text</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-text btn-dropdown">Default</button>
+            <button class="btn btn-text btn-dropdown" disabled>Disabled</button>
+            <button class="btn btn-sm btn-text btn-dropdown">Small</button>
+            <button class="btn btn-lg btn-text btn-dropdown">Large</button>
+        </div>
+        `;
+};
+export const Dropdown = DropdownTemplate.bind({});
+Dropdown.args = {};
