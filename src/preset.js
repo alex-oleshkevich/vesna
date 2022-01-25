@@ -98,6 +98,7 @@ module.exports = {
         require('./buttons'),
         require('./tables'),
         require('./dots'),
+        require('./status'),
 
         // composite
         require('./alerts'),

@@ -9,7 +9,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             display: 'inline-flex',
             borderWidth: '1px',
             borderColor: 'transparent',
-            backgroundColor: theme('colors.gray.500'),
+            backgroundColor: theme('colors.gray.300'),
         },
         '.dot-green': {
             backgroundColor: theme('colors.green.500'),
@@ -26,11 +26,14 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.dot-purple': {
             backgroundColor: theme('colors.purple.500'),
         },
+        '.dot-teal': {
+            backgroundColor: theme('colors.teal.500'),
+        },
         '.dot-black': {
             backgroundColor: theme('colors.black'),
         },
         '.dot-white': {
-            borderColor: theme('colors.gray.200'),
+            borderColor: theme('colors.gray.300'),
             backgroundColor: theme('colors.white'),
         },
     });
