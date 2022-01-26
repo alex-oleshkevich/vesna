@@ -103,6 +103,7 @@ module.exports = {
         require('./counter'),
         require('./progressbar'),
         require('./dropdown_menu'),
+        require('./tabs'),
 
         // composite
         require('./alerts'),
