@@ -29,7 +29,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
             cursor: 'pointer',
             userSelect: 'none',
             color: theme('colors.gray.800'),
-            transition: 'color 150ms ease-in-out',
         },
         '.dropdown-menu li:hover:not(.disabled)': {
             backgroundColor: theme('colors.gray.50'),
