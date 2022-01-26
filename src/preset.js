@@ -99,6 +99,7 @@ module.exports = {
         require('./tables'),
         require('./dots'),
         require('./status'),
+        require('./badges'),
 
         // composite
         require('./alerts'),
