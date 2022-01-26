@@ -102,6 +102,7 @@ module.exports = {
         require('./badges'),
         require('./counter'),
         require('./progressbar'),
+        require('./dropdown_menu'),
 
         // composite
         require('./alerts'),
