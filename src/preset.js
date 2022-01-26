@@ -105,6 +105,7 @@ module.exports = {
         require('./dropdown_menu'),
         require('./tabs'),
         require('./form_inputs'),
+        require('./dividers'),
 
         // composite
         require('./alerts'),
