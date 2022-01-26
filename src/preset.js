@@ -30,7 +30,7 @@ module.exports = {
             black: 'black',
             transparent: 'rgba(0, 0, 0, 0))',
             inherit: 'inherit',
-            ring: 'rgb(49 132 253 / 50%)',
+            ring: 'rgb(49 132 253 / 25%)',
 
             'dark-gray': colorToChannels(colors.darkGray),
             'mid-gray': colorToChannels(colors.midGray),
@@ -104,6 +104,7 @@ module.exports = {
         require('./progressbar'),
         require('./dropdown_menu'),
         require('./tabs'),
+        require('./form_inputs'),
 
         // composite
         require('./alerts'),
