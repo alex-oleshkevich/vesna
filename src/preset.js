@@ -101,6 +101,7 @@ module.exports = {
         require('./status'),
         require('./badges'),
         require('./counter'),
+        require('./progressbar'),
 
         // composite
         require('./alerts'),
