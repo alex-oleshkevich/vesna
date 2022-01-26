@@ -32,7 +32,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
             boxShadow: '0 0 0 0.2rem var(--vs-btn-ring-color)',
         },
         '.btn:disabled': {
-            '--vs-btn-border-color': theme('colors.gray.300'),
             '--vs-btn-text-color': theme('colors.gray.400'),
             cursor: 'not-allowed',
         },
@@ -95,7 +94,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
             borderColor: 'transparent',
         },
         '.btn-success:disabled': {
-            '--vs-btn-text-color': theme('colors.gray.50'),
             '--vs-btn-background': theme('colors.green.300'),
         },
         '.btn-success:hover:not(:disabled)': {

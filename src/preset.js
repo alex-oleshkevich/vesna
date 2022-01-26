@@ -110,6 +110,7 @@ module.exports = {
         require('./avatars'),
         require('./file_upload'),
         require('./spinner'),
+        require('./dropzone'),
 
         // composite
         require('./alerts'),
