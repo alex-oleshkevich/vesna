@@ -113,6 +113,7 @@ module.exports = {
         require('./dropzone'),
 
         // composite
+        require('./empty_state'),
         require('./alerts'),
         require('./modals'),
     ],
