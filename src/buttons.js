@@ -16,8 +16,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
             alignItems: 'center',
             boxSizing: 'border-box',
             borderRadius: theme('borderRadius.md'),
-            lineHeight: theme('lineHeight.6'),
+            lineHeight: theme('lineHeight.5'),
             fontWeight: theme('fontWeight.medium'),
+            fontSize: theme('fontSize.sm'),
             transition: 'background 150ms cubic-bezier(0.4, 0, 0.2, 1)',
         },
         '.btn:hover:not(:disabled)': {

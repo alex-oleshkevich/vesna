@@ -106,5 +106,6 @@ module.exports = {
 
         // composite
         require('./alerts'),
+        require('./modals'),
     ],
 };
