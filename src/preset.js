@@ -100,6 +100,7 @@ module.exports = {
         require('./dots'),
         require('./status'),
         require('./badges'),
+        require('./counter'),
 
         // composite
         require('./alerts'),
