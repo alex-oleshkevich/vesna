@@ -108,6 +108,8 @@ module.exports = {
         require('./dividers'),
         require('./pagination'),
         require('./avatars'),
+        require('./file_upload'),
+        require('./spinner'),
 
         // composite
         require('./alerts'),
