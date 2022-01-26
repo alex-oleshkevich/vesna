@@ -107,6 +107,7 @@ module.exports = {
         require('./form_inputs'),
         require('./dividers'),
         require('./pagination'),
+        require('./avatars'),
 
         // composite
         require('./alerts'),
