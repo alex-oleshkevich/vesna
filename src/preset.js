@@ -106,6 +106,7 @@ module.exports = {
         require('./tabs'),
         require('./form_inputs'),
         require('./dividers'),
+        require('./pagination'),
 
         // composite
         require('./alerts'),
