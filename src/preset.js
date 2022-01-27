@@ -118,5 +118,8 @@ module.exports = {
         require('./alerts'),
         require('./modals'),
         require('./datepicker'),
+
+        // app
+        require('./app_shell/sidebar'),
     ],
 };
