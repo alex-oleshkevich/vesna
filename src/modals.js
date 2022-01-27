@@ -16,7 +16,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             overflowX: 'hidden',
             overflowY: 'auto',
             outline: 0,
-            backgroundColor: theme('colors.gray')[400]({ opacityValue: 75 }),
+            backgroundColor: theme('colors.gray')[400]({ opacityValue: .75 }),
             padding: theme('spacing.2'),
         },
         '.modal-dialog': {
