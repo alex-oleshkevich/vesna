@@ -13,8 +13,11 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '--vs-sidebar-heading-color': theme('colors.gray.400'),
             '--vs-sidebar-divider-bg': theme('colors.gray.100'),
             '--vs-sidebar-border-color': theme('colors.gray.200'),
+            '--vs-sidebar-width': '280px',
 
-            width: '280px',
+            width: 'var(--vs-sidebar-width)',
+            flexBasis: 'var(--vs-sidebar-width)',
+            flex: 'auto',
             backgroundColor: 'var(--vs-sidebar-bg-color)',
             paddingLeft: theme('spacing.3'),
             paddingRight: theme('spacing.3'),
@@ -29,7 +32,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             header: {
                 marginBottom: theme('spacing.6'),
             },
-            
+
             footer: {
                 marginTop: 'auto',
                 paddingTop: theme('spacing.6'),
@@ -107,7 +110,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
 
                     '.avatar': {
                         marginRight: theme('spacing.2'),
-                    }
+                    },
                 },
 
                 ':is(li.active, .sidebar-menu-item.active) a': {
