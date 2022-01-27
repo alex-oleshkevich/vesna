@@ -27,7 +27,13 @@ module.exports = plugin(function ({ addComponents, theme }) {
             padding: theme('spacing.4'),
             width: '100%',
             maxWidth: theme('maxWidth.xl'),
+
+            '.modal-header, > header, .modal-body, > main, .modal-footer, > footer': {
+                paddingLeft: theme('spacing.1'),
+                paddingRight: theme('spacing.1'),
+            }
         },
+
         ':is(.modal-dialog, .modal-content) > *:not(:last-child)': {
             marginBottom: theme('spacing.3'),
         },
