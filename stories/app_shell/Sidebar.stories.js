@@ -23,78 +23,75 @@ export default {
 
 const Template = () => {
     return `
-        <h5>Sidebar</h5>
-        <div class="example">
-            <aside class="sidebar">
-                <header>
-                    <div class="logo">${LOGO}</div>
-                </header>
-                <main>
-                    <div class="sidebar-heading">Projects</div>
-                    <ul class="sidebar-menu">
-                        <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
-                        <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
-                        <li><a href="#">${FOLDER_ICON} Users</a></li>
-                        <li><a href="#">${FOLDER_ICON} Products</a></li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Products
-                                <span class="badge badge-sm badge-green">New</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Categories
-                                <div class="counter counter-sm">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                     <hr>
+        <aside class="sidebar">
+            <header>
+                <div class="logo">${LOGO}</div>
+            </header>
+            <main>
+                <div class="sidebar-heading">Projects</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
+                    <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
+                    <li><a href="#">${FOLDER_ICON} Users</a></li>
+                    <li><a href="#">${FOLDER_ICON} Products</a></li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Products
+                            <span class="badge badge-sm badge-green">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Categories
+                            <div class="counter counter-sm">42</div>
+                        </a>
+                    </li>
+                </ul>
+                    <hr>
 
-                    <div class="sidebar-heading">Persons</div>
-                    <ul class="sidebar-menu">
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                John Doe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Jane Air
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Aylit Heron
-                                <div class="counter counter-sm bg-primary-500">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <footer>
-                    <div class="flex items-center h-12 hover:bg-gray-100 rounded-md px-3">
-                        <div class="avatar avatar-sm mr-6">
-                            <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                        </div>
-                        <span>Aylit Heron</span>
-                        <div class="ml-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
+                <div class="sidebar-heading">Persons</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            John Doe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Jane Air
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Aylit Heron
+                            <div class="counter counter-sm bg-primary-500">42</div>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <div class="flex items-center h-12 hover:bg-gray-100 rounded-md px-3">
+                    <div class="avatar avatar-sm mr-6">
+                        <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
                     </div>
-                </footer>
-            </aside>
-        </div>
+                    <span>Aylit Heron</span>
+                    <div class="ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </footer>
+        </aside>
     `;
 };
 export const Sidebar = Template.bind({});
@@ -102,78 +99,75 @@ export const Sidebar = Template.bind({});
 
 const DarkTemplate = () => {
     return `
-        <h5>Sidebar</h5>
-        <div class="example">
-            <aside class="sidebar sidebar-dark">
-                <header>
-                    <div class="logo">${LOGO_DARK}</div>
-                </header>
-                <main>
-                    <div class="sidebar-heading">Projects</div>
-                    <ul class="sidebar-menu">
-                        <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
-                        <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
-                        <li><a href="#">${FOLDER_ICON} Users</a></li>
-                        <li><a href="#">${FOLDER_ICON} Products</a></li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Products
-                                <span class="badge badge-sm badge-green">New</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Categories
-                                <div class="counter counter-sm">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                     <hr>
+        <aside class="sidebar sidebar-dark">
+            <header>
+                <div class="logo">${LOGO_DARK}</div>
+            </header>
+            <main>
+                <div class="sidebar-heading">Projects</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
+                    <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
+                    <li><a href="#">${FOLDER_ICON} Users</a></li>
+                    <li><a href="#">${FOLDER_ICON} Products</a></li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Products
+                            <span class="badge badge-sm badge-green">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Categories
+                            <div class="counter counter-sm">42</div>
+                        </a>
+                    </li>
+                </ul>
+                    <hr>
 
-                    <div class="sidebar-heading">Persons</div>
-                    <ul class="sidebar-menu">
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                John Doe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Jane Air
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Aylit Heron
-                                <div class="counter counter-sm bg-primary-500">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <footer>
-                    <div class="flex items-center h-12 hover:bg-gray-600 text-white rounded-md px-3">
-                        <div class="avatar avatar-sm mr-6">
-                            <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                        </div>
-                        <span>Aylit Heron</span>
-                        <div class="ml-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
+                <div class="sidebar-heading">Persons</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            John Doe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Jane Air
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Aylit Heron
+                            <div class="counter counter-sm bg-primary-500">42</div>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <div class="flex items-center h-12 hover:bg-gray-600 text-white rounded-md px-3">
+                    <div class="avatar avatar-sm mr-6">
+                        <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
                     </div>
-                </footer>
-            </aside>
-        </div>
+                    <span>Aylit Heron</span>
+                    <div class="ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </footer>
+        </aside>
     `;
 };
 export const Dark = DarkTemplate.bind({});
@@ -181,78 +175,75 @@ export const Dark = DarkTemplate.bind({});
 
 const TransparentTemplate = () => {
     return `
-        <h5>Sidebar</h5>
-        <div class="example">
-            <aside class="sidebar sidebar-transparent">
-                <header>
-                    <div class="logo">${LOGO}</div>
-                </header>
-                <main>
-                    <div class="sidebar-heading">Projects</div>
-                    <ul class="sidebar-menu">
-                        <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
-                        <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
-                        <li><a href="#">${FOLDER_ICON} Users</a></li>
-                        <li><a href="#">${FOLDER_ICON} Products</a></li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Products
-                                <span class="badge badge-sm badge-green">New</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                ${FOLDER_ICON} Categories
-                                <div class="counter counter-sm">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                     <hr>
+        <aside class="sidebar sidebar-transparent">
+            <header>
+                <div class="logo">${LOGO}</div>
+            </header>
+            <main>
+                <div class="sidebar-heading">Projects</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">${FOLDER_ICON} Dashboard</a></li>
+                    <li class="active"><a href="#">${FOLDER_ICON} Orders</a></li>
+                    <li><a href="#">${FOLDER_ICON} Users</a></li>
+                    <li><a href="#">${FOLDER_ICON} Products</a></li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Products
+                            <span class="badge badge-sm badge-green">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ${FOLDER_ICON} Categories
+                            <div class="counter counter-sm">42</div>
+                        </a>
+                    </li>
+                </ul>
+                    <hr>
 
-                    <div class="sidebar-heading">Persons</div>
-                    <ul class="sidebar-menu">
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                John Doe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Jane Air
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="avatar avatar-sm">
-                                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                                </div>
-                                Aylit Heron
-                                <div class="counter counter-sm bg-primary-500">42</div>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <footer>
-                    <div class="flex items-center h-12 hover:bg-gray-100 rounded-md px-3">
-                        <div class="avatar avatar-sm mr-6">
-                            <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
-                        </div>
-                        <span>Aylit Heron</span>
-                        <div class="ml-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
+                <div class="sidebar-heading">Persons</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            John Doe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Jane Air
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="avatar avatar-sm">
+                                <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            </div>
+                            Aylit Heron
+                            <div class="counter counter-sm bg-primary-500">42</div>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <div class="flex items-center h-12 hover:bg-gray-100 rounded-md px-3">
+                    <div class="avatar avatar-sm mr-6">
+                        <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
                     </div>
-                </footer>
-            </aside>
-        </div>
+                    <span>Aylit Heron</span>
+                    <div class="ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </footer>
+        </aside>
     `;
 };
 export const Transparent = TransparentTemplate.bind({});

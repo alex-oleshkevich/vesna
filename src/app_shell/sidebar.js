@@ -22,6 +22,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
             paddingBottom: theme('spacing.5'),
             borderRightWidth: '1px',
             borderColor: 'var(--vs-sidebar-border-color)',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
 
             header: {
                 marginBottom: theme('spacing.6'),
