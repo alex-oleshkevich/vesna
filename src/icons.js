@@ -11,6 +11,14 @@ const ICON_CLOSE = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox=
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
 </svg>`;
 
+const CHEVRON_LEFT = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+</svg>`;
+
+const CHEVRON_RIGHT = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>`;
+
 const ICON_CLOSE_URL = svgToDataURL(ICON_CLOSE);
 
-module.exports = { ICON_WARNING, ICON_CLOSE, ICON_CLOSE_URL, svgToDataURL };
+module.exports = { ICON_WARNING, ICON_CLOSE, CHEVRON_LEFT, CHEVRON_RIGHT, ICON_CLOSE_URL, svgToDataURL };

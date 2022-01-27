@@ -6,7 +6,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '--vs-badge-padding-y': 'auto',
             '--vs-badge-padding-x': theme('spacing.2'),
             '--vs-badge-height': theme('spacing.6'),
-            '--vs-badge-font-size': 'auto',
+            '--vs-badge-font-size': theme('fontSize.sm'),
 
             paddingTop: 'var(--vs-badge-padding-y)',
             paddingBottom: 'var(--vs-badge-padding-y)',
@@ -29,7 +29,8 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '--vs-badge-padding-y': 0,
             '--vs-badge-padding-x': theme('spacing.1'),
             '--vs-badge-height': theme('spacing.4'),
-            '--vs-badge-font-size': theme('fontSize.sm'),
+            '--vs-badge-font-size': theme('fontSize.xs'),
+            borderRadius: theme('borderRadius.DEFAULT'),
             lineHeight: '16px',
         },
         '.badge-lg': {

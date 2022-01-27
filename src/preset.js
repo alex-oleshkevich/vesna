@@ -114,7 +114,9 @@ module.exports = {
 
         // composite
         require('./empty_state'),
+        require('./calendar'),
         require('./alerts'),
         require('./modals'),
+        require('./datepicker'),
     ],
 };

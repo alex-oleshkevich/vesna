@@ -132,7 +132,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
         // icon-only
         '.btn-icon': {
             '--vs-btn-border-color': 'transparent',
-            borderRadius: theme('borderRadius.full'),
             padding: theme('spacing.1'),
         },
         '.btn-icon:disabled': {
