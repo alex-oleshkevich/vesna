@@ -16,8 +16,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '--vs-sidebar-width': '280px',
 
             width: 'var(--vs-sidebar-width)',
-            flexBasis: 'var(--vs-sidebar-width)',
-            flex: 'auto',
             backgroundColor: 'var(--vs-sidebar-bg-color)',
             paddingLeft: theme('spacing.3'),
             paddingRight: theme('spacing.3'),
