@@ -153,6 +153,7 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
             marginBottom: theme('spacing.4'),
         },
         '.form-group > label, .form-label': {
+            display: 'block',
             minHeight: theme('spacing.6'),
             marginBottom: theme('spacing.1'),
         },

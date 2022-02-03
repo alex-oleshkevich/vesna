@@ -20,5 +20,6 @@ const CHEVRON_RIGHT = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewB
 </svg>`;
 
 const ICON_CLOSE_URL = svgToDataURL(ICON_CLOSE);
+const CHEVRON_RIGHT_URL = svgToDataURL(CHEVRON_RIGHT);
 
-module.exports = { ICON_WARNING, ICON_CLOSE, CHEVRON_LEFT, CHEVRON_RIGHT, ICON_CLOSE_URL, svgToDataURL };
+module.exports = { ICON_WARNING, ICON_CLOSE, CHEVRON_LEFT, CHEVRON_RIGHT, ICON_CLOSE_URL, CHEVRON_RIGHT_URL, svgToDataURL };

@@ -111,6 +111,7 @@ module.exports = {
         require('./file_upload'),
         require('./spinner'),
         require('./dropzone'),
+        require('./breadcrumbs'),
 
         // composite
         require('./empty_state'),
