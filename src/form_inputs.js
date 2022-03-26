@@ -133,7 +133,9 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
         'input[type="radio"]:checked': {
             backgroundImage: `url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e")`,
         },
-
+        'select[multiple], textarea': {
+            height: 'inherit!important',
+        },
         fieldset: {
             display: 'block',
         },
