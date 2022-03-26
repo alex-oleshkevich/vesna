@@ -216,7 +216,7 @@ const Template = () => {
                     Empty states can display a wide variety of content.
                 </main>
                 <footer>
-                    <button class="btn btn-primary">Create</button
+                    <button class="btn btn-primary">Create</button>
                 </footer>
             </div>
         </div>

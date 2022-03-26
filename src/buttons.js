@@ -19,6 +19,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             lineHeight: theme('lineHeight.5'),
             fontWeight: theme('fontWeight.medium'),
             fontSize: theme('fontSize.sm'),
+            height: 'var(--vs-input-min-height-md)',
             transition: 'background 150ms cubic-bezier(0.4, 0, 0.2, 1)',
         },
         '.btn:hover:not(:disabled)': {
@@ -45,9 +46,13 @@ module.exports = plugin(function ({ addComponents, theme }) {
         // sizes
         '.btn-sm': {
             '--vs-btn-padding': 'var(--vs-input-padding-sm)',
+            lineHeight: theme('spacing.4'),
+            height: 'var(--vs-input-min-height-sm)',
         },
         '.btn-lg': {
             '--vs-btn-padding': 'var(--vs-input-padding-lg)',
+            lineHeight: theme('spacing.6'),
+            height: 'var(--vs-input-min-height-lg)',
         },
         '.btn-lg > svg': {
             marginRight: theme('spacing.3'),
@@ -128,23 +133,44 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.btn-text:disabled': {
             '--vs-btn-border-color': 'transparent',
         },
+        '.btn-text.btn-danger': {
+            color: 'inherit',
+        },
+        '.btn-text.btn-danger:hover': {
+            color: theme('colors.red.900'),
+            backgroundColor: theme('colors.red.300'),
+        },
 
         // icon-only
         '.btn-icon': {
             '--vs-btn-border-color': 'transparent',
             padding: theme('spacing.1'),
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            aspectRatio: '1 / 1',
         },
         '.btn-icon:disabled': {
             '--vs-btn-border-color': 'transparent',
         },
         '.btn-icon > svg': {
             margin: 0,
+            height: theme('spacing.5'),
+            width: theme('spacing.5'),
         },
         '.btn-icon.btn-sm': {
             padding: theme('spacing.0'),
         },
         '.btn-icon.btn-lg': {
             padding: theme('spacing.2'),
+        },
+        '.btn-icon.btn-danger': {
+            color: 'inherit',
+            '--vs-btn-background': 'transparent',
+        },
+        '.btn-icon.btn-danger:hover': {
+            '--vs-btn-background': theme('colors.red.100'),
+            color: theme('colors.red.700'),
         },
 
         '.btn-dropdown': {

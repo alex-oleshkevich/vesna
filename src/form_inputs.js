@@ -21,9 +21,9 @@ const inputSelectors = [
 module.exports = plugin(function ({ addBase, addComponents, theme }) {
     addBase({
         [inputSelectors.join(', ')]: {
-            '--vs-form-input-height': 'var(--vs-input-height-md)',
+            '--vs-form-input-height': 'var(--vs-input-min-height-md)',
             '--vs-form-input-padding': 'var(--vs-input-padding-md)',
-            minHeight: 'var(--vs-form-input-height)',
+            height: 'var(--vs-form-input-height)',
             padding: 'var(--vs-form-input-padding)',
             appearance: 'none',
             backgroundColor: 'white',
@@ -58,11 +58,11 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
             },
 
             '&.form-control-sm': {
-                '--vs-form-input-height': 'var(--vs-input-height-sm)',
                 '--vs-form-input-padding': 'var(--vs-input-padding-sm)',
+                '--vs-form-input-height': 'var(--vs-input-min-height-sm)',
             },
             '&.form-control-lg': {
-                '--vs-form-input-height': 'var(--vs-input-height-lg)',
+                '--vs-form-input-height': 'var(--vs-input-min-height-lg)',
                 '--vs-form-input-padding': 'var(--vs-input-padding-lg)',
             },
         },
