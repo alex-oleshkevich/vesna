@@ -18,7 +18,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             borderRadius: theme('borderRadius.md'),
             lineHeight: theme('lineHeight.5'),
             fontWeight: theme('fontWeight.medium'),
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
             height: 'var(--vs-input-min-height-md)',
             transition: 'background 150ms cubic-bezier(0.4, 0, 0.2, 1)',
         },

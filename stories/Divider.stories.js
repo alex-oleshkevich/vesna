@@ -19,6 +19,13 @@ const Template = () => {
             </div>
             <p>Some content below</p>
         </div>
+        <div class="example max-w-lg mt-10">
+            <div class="divider">
+                <div class="divider-left" aria-hidden="true">
+                    <div class="divider-inner"></div>
+                </div>
+            </div>
+        </div>
     `;
 };
 export const Dividers = Template.bind({});

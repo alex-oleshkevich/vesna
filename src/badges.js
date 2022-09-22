@@ -6,7 +6,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '--vs-badge-padding-y': 'auto',
             '--vs-badge-padding-x': theme('spacing.2'),
             '--vs-badge-height': theme('spacing.6'),
-            '--vs-badge-font-size': theme('fontSize.sm'),
+            '--vs-badge-font-size': theme('fontSize.base'),
 
             paddingTop: 'var(--vs-badge-padding-y)',
             paddingBottom: 'var(--vs-badge-padding-y)',

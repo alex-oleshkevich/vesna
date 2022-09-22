@@ -121,7 +121,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
 
         ':is(.modal-confirmation .modal-dialog) .modal-body, main': {
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
         },
 
         [`@media(min-width: ${theme('screens.md')})`]: {

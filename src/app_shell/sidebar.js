@@ -85,7 +85,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                     width: '100%',
                     alignItems: 'center',
                     color: 'var(--vs-sidebar-item-color)',
-                    fontSize: theme('fontSize.sm'),
+                    fontSize: theme('fontSize.base'),
                     minHeight: theme('spacing.8'),
                     lineHeight: theme('lineHeight.6'),
                     fontWeight: theme('fontWeight.medium'),

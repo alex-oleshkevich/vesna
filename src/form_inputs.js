@@ -34,7 +34,7 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
             width: '100%',
             boxSizing: 'border-box',
             borderRadius: theme('borderRadius.md'),
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
             lineHeight: theme('lineHeight.5'),
 
             '&::placeholder': {
@@ -160,9 +160,8 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
             marginBottom: theme('spacing.1'),
         },
         '.form-help, .form-text': {
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
             color: theme('colors.gray.400'),
-            fontSize: theme('fontSize.sm'),
             marginTop: theme('spacing.1'),
         },
         '.form-errors, .invalid-feedback': {
@@ -170,7 +169,7 @@ module.exports = plugin(function ({ addBase, addComponents, theme }) {
             display: 'block',
             padding: 0,
             margin: 0,
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
             lineHeight: theme('lineHeight.5'),
             marginTop: theme('spacing.1'),
             color: theme('colors.red.600'),

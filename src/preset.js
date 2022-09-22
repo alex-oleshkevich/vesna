@@ -86,6 +86,30 @@ module.exports = {
                 'monospace',
             ].join(', '),
         },
+        boxShadow: {
+            sm: 'var(--shadow-sm)',
+            DEFAULT: 'var(--shadow-base)',
+            md: 'var(--shadow-md)',
+            lg: 'var(--shadow-lg)',
+            xl: 'var(--shadow-xl)',
+            '2xl': 'var(--shadow-2xl)',
+        },
+        extend: {
+            fontSize: {
+                sm: '0.75rem', // 12px
+                base: '0.875rem', // 14px
+                md: '0.875rem', // 14px
+                lg: '1rem', // 16px
+                xl: '1.125rem', // 18px
+                '2xl': '1.5rem', // 24px
+                '3xl': '2rem', // 32px
+                '4xl': '2.25rem', // 36px
+                '5xl': '2.5rem', // 40px
+                '6xl': '3rem', // 48px
+                '7xl': '3.5rem', // 56px
+                '8xl': '4rem', // 64px
+            },
+        },
     },
     plugins: [
         require('@tailwindcss/typography'),

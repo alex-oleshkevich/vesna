@@ -13,7 +13,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             listStyle: 'none',
             margin: 0,
             padding: 0,
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
             color: theme('colors.gray.800'),
             lineHeight: theme('lineHeight.6'),
 

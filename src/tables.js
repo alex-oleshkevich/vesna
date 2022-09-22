@@ -11,9 +11,8 @@ module.exports = plugin(function ({ addBase, theme }) {
             marginBottom: theme('spacing.2'),
         },
         'table th': {
-            backgroundColor: theme('colors.gray.100'),
             fontWeight: theme('fontWeight.medium'),
-            color: theme('colors.gray.800'),
+            borderBottom: `2px solid ${theme('colors.gray.200')}`,
             textAlign: 'left',
         },
         'table th a': {

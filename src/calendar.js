@@ -43,7 +43,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
 
                     button: {
                         fontWeight: theme('fontWeight.semibold'),
-                        fontSize: theme('fontSize.sm'),
+                        fontSize: theme('fontSize.base'),
                         height: theme('spacing.6'),
                         borderRadius: theme('borderRadius.DEFAULT'),
                         paddingLeft: theme('spacing.1'),
@@ -132,7 +132,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                     display: 'grid',
                     gridTemplateColumns: 'repeat(7, minmax(0, 1fr))',
                     color: theme('colors.gray.600'),
-                    fontSize: theme('fontSize.sm'),
+                    fontSize: theme('fontSize.base'),
                     borderBottomWidth: '1px',
                     borderColor: theme('colors.gray.200'),
                 },

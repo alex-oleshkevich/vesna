@@ -4,7 +4,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents({
         '.datepicker': {
             display: 'inline-flex',
-            flexDirection: 'column',
 
             '&.datepicker-popup': {
                 borderWidth: '1px',
@@ -52,7 +51,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                     paddingRight: theme('spacing.4'),
                     lineHeight: theme('lineHeight.6'),
                     textAlign: 'left',
-                    fontSize: theme('fontSize.sm'),
+                    fontSize: theme('fontSize.base'),
                     width: theme('spacing.32'),
                     borderRadius: theme('borderRadius.md'),
 

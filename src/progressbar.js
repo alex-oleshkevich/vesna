@@ -10,7 +10,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             backgroundColor: theme('colors.primary.200'),
             overflow: 'hidden',
             display: 'flex',
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
         },
         'progress::-webkit-progress-value, .progress-bar': {
             transition: 'width .6s ease',
@@ -29,7 +29,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
         '.progress-lg': {
             height: theme('spacing.6'),
-            fontSize: theme('fontSize.sm'),
+            fontSize: theme('fontSize.base'),
         },
         '.progress.striped > .progress-bar, .progress-bar-striped': {
             backgroundImage: `linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)`,

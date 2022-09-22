@@ -4,6 +4,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents({
         '.divider': {
             position: 'relative',
+            width: '100%',
 
             '.divider-left': {
                 position: 'absolute',
@@ -30,7 +31,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                     paddingLeft: theme('spacing.2'),
                     paddingRight: theme('spacing.2'),
                     backgroundColor: theme('colors.white'),
-                    fontSize: theme('fontSize.sm'),
+                    fontSize: theme('fontSize.base'),
                 },
             },
         },
