@@ -54,7 +54,7 @@ const TokensTemplate = () => {
             <p><small>This line of text is meant to be treated as fine print.</small></p>
             <p><strong>This line rendered as bold text.</strong></p>
             <p><em>This line rendered as italicized text.</em></p>
-            <p><a href="#">This line of text is a link.</a></p>
+            <p><a href="#" class="link">This line of text is a link.</a></p>
         </div>
 
         <h2>Unordered list</h2>

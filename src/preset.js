@@ -23,9 +23,9 @@ function colorToChannels(colors) {
 module.exports = {
     theme: {
         colors: {
-            base: colors.darkGray[900],
+            base: colors.darkGray[800],
             muted: colors.darkGray[500],
-            link: colors.primary[600],
+            link: colors.blue[600],
             white: 'white',
             black: 'black',
             transparent: 'rgba(0, 0, 0, 0))',
@@ -35,7 +35,8 @@ module.exports = {
             'dark-gray': colorToChannels(colors.darkGray),
             'mid-gray': colorToChannels(colors.midGray),
             'light-gray': colorToChannels(colors.lightGray),
-            primary: colorToChannels(colors.primary),
+            primary: colorToChannels(colors.blue),
+            blue: colorToChannels(colors.blue),
             red: colorToChannels(colors.red),
             green: colorToChannels(colors.green),
             yellow: colorToChannels(colors.yellow),
@@ -109,6 +110,10 @@ module.exports = {
                 '7xl': '3.5rem', // 56px
                 '8xl': '4rem', // 64px
             },
+            lineHeight: {
+                6: '1.5rem',
+                12: '3rem',
+            }
         },
     },
     plugins: [

@@ -5,43 +5,58 @@ module.exports = plugin(function ({ addBase, theme }) {
         body: {
             margin: '0px',
             color: theme('colors.base'),
-            fontSize: theme('fontSize.base'),
+            fontSize: theme('fontSize.md'),
             lineHeight: theme('lineHeight.6'),
+            fontWeight: 400,
             fontFamily: theme('fontFamily.sans'),
             '-webkit-font-smoothing': 'antialiased',
         },
-        a: {
+        '.link': {
             color: theme('colors.link'),
         },
-        'a:hover': {
+        '.link:hover': {
             textDecoration: 'underline',
         },
         'p:not(:last-of-type)': {
+            lineHeight: theme('lineHeight.5'),
             marginBottom: theme('spacing.4'),
         },
         'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6': {
             marginTop: 0,
             marginBottom: theme('spacing.2'),
-            fontWeight: 500,
-            lineHeight: 1.2,
         },
         'h1, .h1': {
+            fontWeight: 700,
+            lineHeight: theme('lineHeight.12'),
             fontSize: theme('fontSize.4xl'),
         },
         'h2, .h2': {
-            fontSize: theme('fontSize.3xl'),
+            fontWeight: 600,
+            fontSize: theme('fontSize.2xl'),
+            lineHeight: theme('lineHeight.8'),
         },
         'h3, .h3': {
-            fontSize: theme('fontSize.2xl'),
+            fontWeight: 600,
+            fontSize: theme('fontSize.xl'),
+            lineHeight: theme('lineHeight.6'),
         },
         'h4, .h4': {
-            fontSize: theme('fontSize.xl'),
+            fontWeight: 600,
+            fontSize: theme('fontSize.md'),
+            lineHeight: theme('lineHeight.6'),
+            textTransform: 'uppercase',
         },
         'h5, .h5': {
-            fontSize: theme('fontSize.lg'),
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            lineHeight: theme('lineHeight.4'),
+            fontSize: theme('fontSize.sm'),
         },
         'h6, .h6': {
-            fontSize: theme('fontSize.base'),
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            lineHeight: theme('lineHeight.4'),
+            fontSize: theme('fontSize.sm'),
         },
         'mark, .mark': {
             padding: theme('spacing.1'),
@@ -58,16 +73,23 @@ module.exports = plugin(function ({ addBase, theme }) {
             listStyleType: 'decimal',
             paddingLeft: theme('space.6'),
         },
+        pre: {
+            fontWeight: 400,
+            fontSize: theme('fontSize.md'),
+            lineHeight: theme('lineHeight.6'),
+        },
         'code, .code': {
             wordWrap: 'break-word',
-            backgroundColor: theme('colors.gray.50'),
+            backgroundColor: theme('colors.light-gray.500'),
             padding: theme('spacing.1'),
             borderRadius: '2px',
+            fontWeight: 400,
+            lineHeight: theme('lineHeight.6'),
         },
         'kbd, .kbd': {
             wordWrap: 'break-word',
             color: 'white',
-            backgroundColor: theme('colors.gray.900'),
+            backgroundColor: theme('colors.dark-gray.900'),
             padding: theme('spacing.1'),
             borderRadius: '4px',
         },
@@ -76,7 +98,6 @@ module.exports = plugin(function ({ addBase, theme }) {
         },
         '.lead': {
             fontSize: theme('fontSize.lg'),
-            fontWeight: 300,
         },
     });
 });
