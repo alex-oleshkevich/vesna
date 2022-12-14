@@ -1,3 +1,5 @@
+// import './avatars';
+
 export default {
     title: 'Avatars',
 };
@@ -530,3 +532,16 @@ const InitialsSquareTemplate = () => {
 };
 
 export const InitialsSquare = InitialsSquareTemplate.bind();
+
+
+
+const WebComponentTemplate = () => {
+    return `
+    <h5>Blue</h5>
+    <div class="example space-y-2">
+        <vs-avatar>
+    </div>
+`;
+};
+
+export const WebComponent = WebComponentTemplate.bind();
