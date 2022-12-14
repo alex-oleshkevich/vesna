@@ -1,0 +1,226 @@
+:root {
+    --vs-button-default-padding: var(--vs-spacing-1) var(--vs-spacing-3);
+    --vs-button-default-font-size: var(--vs-font-size-base);
+    --vs-button-default-background-color: white;
+    --vs-button-default-border-color: var(--vs-color-light-gray-2);
+    --vs-button-default-border-width: 1px;
+    --vs-button-default-border-radius: var(--vs-rounded-md);
+    --vs-button-default-color: var(--vs-color-dark-gray-2);
+    --vs-button-default-line-height: var(--vs-line-height-6);
+    --vs-button-default-gap: var(--vs-spacing-3);
+    --vs-button-default-min-height: 30px;
+}
+
+.btn {
+    --vs-button-padding: var(--vs-button-default-padding);
+    --vs-button-font-size: var(--vs-button-default-font-size);
+    --vs-button-color: var(--vs-button-default-color);
+    --vs-button-border-color: var(--vs-button-default-border-color);
+    --vs-button-border-width: var(--vs-button-default-border-width);
+    --vs-button-border-radius: var(--vs-button-default-border-radius);
+    --vs-button-background-color: var(--vs-button-default-background-color);
+    --vs-button-line-height: var(--vs-button-default-line-height);
+    --vs-button-gap: var(--vs-button-default-gap);
+    --vs-button-min-height: var(--vs-button-default-min-height);
+
+    display: inline-flex;
+    font-size: var(--vs-button-font-size);
+    color: var(--vs-button-color);
+    background-color: var(--vs-button-background-color);
+    padding: var(--vs-button-padding);
+    border: var(--vs-button-border-width) solid var(--vs-button-border-color);
+    border-radius: var(--vs-button-border-radius);
+    gap: var(--vs-button-gap);
+    min-height: var(--vs-button-min-height);
+    font-weight: 500;
+    line-height: var(--vs-button-line-height);
+    transition-property: border, color, background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+}
+
+.btn:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-light-gray-5);
+}
+
+.btn:active:not(:disabled) {
+    --vs-button-border-color: var(--vs-color-light-gray-3);
+    --vs-button-background-color: var(--vs-color-light-gray-3);
+}
+
+.btn:focus:not(:disabled):not(:active) {
+    --vs-button-border-color: var(--vs-color-light-gray-1);
+    outline: 3px solid var(--vs-color-blue-300);
+}
+
+.btn:disabled {
+    --vs-button-color: var(--vs-color-mid-gray-3);
+    cursor: not-allowed;
+}
+
+.btn > svg {
+    height: var(--vs-spacing-6);
+    width: var(--vs-spacing-6);
+}
+
+.btn-sm {
+    --vs-button-min-height: var(--vs-spacing-6);
+    --vs-button-padding: 0px var(--vs-spacing-2);
+}
+
+.btn-lg {
+    --vs-button-min-height: var(--vs-spacing-10);
+    --vs-button-padding: var(--vs-spacing-2) var(--vs-spacing-4);
+}
+
+/* primary variant */
+
+.btn.btn-primary {
+    --vs-button-background-color: var(--vs-color-dark-gray-700);
+    --vs-button-color: var(--vs-color-white);
+    --vs-button-border-color: transparent;
+}
+
+.btn-primary:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-dark-gray-5);
+}
+
+.btn-primary:active:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-dark-gray-900);
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+}
+
+/* accent variant */
+
+.btn-accent {
+    --vs-button-background-color: var(--vs-color-blue-500);
+    --vs-button-color: var(--vs-color-white);
+    --vs-button-border-color: transparent;
+}
+
+.btn-accent:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-blue-600);
+}
+
+.btn-accent:active:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-blue-700);
+}
+
+.btn-accent:disabled {
+    --vs-button-color: var(--vs-color-white);
+    opacity: 0.5;
+}
+
+/* danger variant */
+.btn-danger {
+    --vs-button-background-color: var(--vs-color-red-500);
+    --vs-button-color: var(--vs-color-white);
+    --vs-button-border-color: transparent;
+}
+
+.btn-danger:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-red-600);
+}
+
+.btn-danger:active:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-red-700);
+}
+
+.btn-danger:disabled {
+    --vs-button-color: var(--vs-color-white);
+    opacity: 0.5;
+}
+
+/* success variant */
+.btn-success {
+    --vs-button-background-color: var(--vs-color-green-500);
+    --vs-button-color: var(--vs-color-white);
+    --vs-button-border-color: transparent;
+}
+
+.btn-success:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-green-600);
+}
+
+.btn-success:active:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-green-700);
+}
+
+.btn-success:disabled {
+    --vs-button-color: var(--vs-color-white);
+    opacity: 0.5;
+}
+
+/* warning variant */
+.btn-warning {
+    --vs-button-background-color: var(--vs-color-yellow-600);
+    --vs-button-color: var(--vs-color-yellow-900);
+    --vs-button-border-color: transparent;
+}
+
+.btn-warning:hover:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-yellow-600);
+}
+
+.btn-warning:active:not(:disabled) {
+    --vs-button-background-color: var(--vs-color-yellow-700);
+}
+
+.btn-warning:disabled {
+    --vs-button-color: var(--vs-color-yellow-900);
+    opacity: 0.5;
+}
+
+.btn-text {
+    border-color: transparent;
+}
+
+.btn-icon {
+    --vs-button-border-color: transparent;
+    --vs-button-padding: var(--vs-spacing-1);
+}
+
+.btn-icon.btn-lg {
+    --vs-button-padding: var(--vs-spacing-2);
+}
+
+.btn-icon.btn-sm {
+    --vs-button-padding: var(--vs-spacing-0);
+}
+
+.btn-icon.btn-danger {
+    --vs-button-color: var(--vs-button-default-color);
+    --vs-button-background-color: transparent;
+}
+
+.btn-icon.btn-danger:hover:not(:disabled) {
+    --vs-button-color: var(--vs-button-default-color);
+    --vs-button-background-color: var(--vs-color-red-200);
+}
+.btn-icon.btn-danger:active:not(:disabled) {
+    --vs-button-color: var(--vs-button-default-color);
+    --vs-button-background-color: var(--vs-color-red-300);
+}
+
+.btn-close,
+button.close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.btn-close:hover,
+button.close:hover {
+    color: var(--vs-color-mid-gray-1);
+}
+
+.btn-close:active,
+button.close:active {
+    color: var(--vs-color-mid-gray-1);
+}

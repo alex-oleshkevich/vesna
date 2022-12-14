@@ -1,0 +1,49 @@
+.dot {
+    --vs-dot-height: var(--vs-spacing-2);
+    --vs-dot-width: var(--vs-spacing-2);
+    --vs-dot-background-color: var(--vs-color-mid-gray-500);
+
+    border-radius: 100%;
+    height: var(--vs-dot-height);
+    width: var(--vs-dot-width);
+    background-color: var(--vs-dot-background-color);
+    border: 1px solid white;
+}
+
+.dot-green {
+    --vs-dot-background-color: var(--vs-color-green-500);
+}
+
+.dot-red {
+    --vs-dot-background-color: var(--vs-color-red-500);
+}
+
+.dot-blue {
+    --vs-dot-background-color: var(--vs-color-blue-500);
+}
+
+.dot-yellow {
+    --vs-dot-background-color: var(--vs-color-yellow-500);
+}
+
+.dot-purple {
+    --vs-dot-background-color: var(--vs-color-purple-500);
+}
+
+.dot-teal {
+    --vs-dot-background-color: var(--vs-color-teal-500);
+}
+
+.dot-black {
+    --vs-dot-background-color: var(--vs-color-black);
+}
+
+.dot-white {
+    --vs-dot-background-color: var(--vs-color-white);
+}
+
+.status {
+    display: inline-flex;
+    gap: var(--vs-spacing-2);
+    align-items: center;
+}

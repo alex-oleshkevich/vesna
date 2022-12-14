@@ -1,5 +1,146 @@
 :root {
-    --vs-font-family: Inter;
-    --vs-font-size: 14px;
-    --vs-font-size-lg
+    --vs-font-family: theme('fontFamily.sans');
+    --vs-font-size-xs: 10px;
+    --vs-font-size-sm: theme('fontSize.sm');
+    --vs-font-size-base: theme('fontSize.base');
+    --vs-font-size-lg: theme('fontSize.lg');
+    --vs-font-size-xl: theme('fontSize.xl');
+    --vs-font-size-2xl: theme('fontSize.2xl');
+    --vs-font-size-3xl: theme('fontSize.3xl');
+    --vs-font-size-4xl: theme('fontSize.4xl');
+
+    --vs-color-white: theme('colors.white');
+    --vs-color-black: theme('colors.black');
+
+    --vs-color-gray-900: theme('colors.gray.900');
+    --vs-color-gray-800: theme('colors.gray.800');
+    --vs-color-gray-700: theme('colors.gray.700');
+    --vs-color-gray-600: theme('colors.gray.600');
+    --vs-color-gray-500: theme('colors.gray.500');
+    --vs-color-gray-400: theme('colors.gray.400');
+    --vs-color-gray-300: theme('colors.gray.300');
+    --vs-color-gray-200: theme('colors.gray.200');
+    --vs-color-gray-100: theme('colors.gray.100');
+    --vs-color-gray-50: theme('colors.gray.50');
+
+    --vs-color-light-gray-900: theme('colors.light-gray.900');
+    --vs-color-light-gray-800: theme('colors.light-gray.800');
+    --vs-color-light-gray-700: theme('colors.light-gray.700');
+    --vs-color-light-gray-600: theme('colors.light-gray.600');
+    --vs-color-light-gray-500: theme('colors.light-gray.500');
+    --vs-color-light-gray-1: theme('colors.light-gray.1');
+    --vs-color-light-gray-2: theme('colors.light-gray.2');
+    --vs-color-light-gray-3: theme('colors.light-gray.3');
+    --vs-color-light-gray-4: theme('colors.light-gray.4');
+    --vs-color-light-gray-5: theme('colors.light-gray.5');
+
+    --vs-color-mid-gray-900: theme('colors.mid-gray.900');
+    --vs-color-mid-gray-800: theme('colors.mid-gray.800');
+    --vs-color-mid-gray-700: theme('colors.mid-gray.700');
+    --vs-color-mid-gray-600: theme('colors.mid-gray.600');
+    --vs-color-mid-gray-500: theme('colors.mid-gray.500');
+    --vs-color-mid-gray-1: theme('colors.mid-gray.1');
+    --vs-color-mid-gray-2: theme('colors.mid-gray.2');
+    --vs-color-mid-gray-3: theme('colors.mid-gray.3');
+    --vs-color-mid-gray-4: theme('colors.mid-gray.4');
+    --vs-color-mid-gray-5: theme('colors.mid-gray.5');
+
+    --vs-color-dark-gray-900: theme('colors.dark-gray.900');
+    --vs-color-dark-gray-800: theme('colors.dark-gray.800');
+    --vs-color-dark-gray-700: theme('colors.dark-gray.700');
+    --vs-color-dark-gray-600: theme('colors.dark-gray.600');
+    --vs-color-dark-gray-500: theme('colors.dark-gray.500');
+    --vs-color-dark-gray-1: theme('colors.dark-gray.1');
+    --vs-color-dark-gray-2: theme('colors.dark-gray.2');
+    --vs-color-dark-gray-3: theme('colors.dark-gray.3');
+    --vs-color-dark-gray-4: theme('colors.dark-gray.4');
+    --vs-color-dark-gray-5: theme('colors.dark-gray.5');
+
+    --vs-color-blue-900: theme('colors.blue.900');
+    --vs-color-blue-800: theme('colors.blue.800');
+    --vs-color-blue-700: theme('colors.blue.700');
+    --vs-color-blue-600: theme('colors.blue.600');
+    --vs-color-blue-500: theme('colors.blue.500');
+    --vs-color-blue-400: theme('colors.blue.400');
+    --vs-color-blue-300: theme('colors.blue.300');
+    --vs-color-blue-200: theme('colors.blue.200');
+    --vs-color-blue-100: theme('colors.blue.100');
+    --vs-color-blue-50: theme('colors.blue.50');
+
+    --vs-color-red-900: theme('colors.red.900');
+    --vs-color-red-800: theme('colors.red.800');
+    --vs-color-red-700: theme('colors.red.700');
+    --vs-color-red-600: theme('colors.red.600');
+    --vs-color-red-500: theme('colors.red.500');
+    --vs-color-red-400: theme('colors.red.400');
+    --vs-color-red-300: theme('colors.red.300');
+    --vs-color-red-200: theme('colors.red.200');
+    --vs-color-red-100: theme('colors.red.100');
+    --vs-color-red-50: theme('colors.red.50');
+
+    --vs-color-yellow-900: theme('colors.yellow.900');
+    --vs-color-yellow-800: theme('colors.yellow.800');
+    --vs-color-yellow-700: theme('colors.yellow.700');
+    --vs-color-yellow-600: theme('colors.yellow.600');
+    --vs-color-yellow-500: theme('colors.yellow.500');
+    --vs-color-yellow-400: theme('colors.yellow.400');
+    --vs-color-yellow-300: theme('colors.yellow.300');
+    --vs-color-yellow-200: theme('colors.yellow.200');
+    --vs-color-yellow-100: theme('colors.yellow.100');
+    --vs-color-yellow-50: theme('colors.yellow.50');
+
+    --vs-color-green-900: theme('colors.green.900');
+    --vs-color-green-800: theme('colors.green.800');
+    --vs-color-green-700: theme('colors.green.700');
+    --vs-color-green-600: theme('colors.green.600');
+    --vs-color-green-500: theme('colors.green.500');
+    --vs-color-green-400: theme('colors.green.400');
+    --vs-color-green-300: theme('colors.green.300');
+    --vs-color-green-200: theme('colors.green.200');
+    --vs-color-green-100: theme('colors.green.100');
+    --vs-color-green-50: theme('colors.green.50');
+
+    --vs-color-teal-900: theme('colors.teal.900');
+    --vs-color-teal-800: theme('colors.teal.800');
+    --vs-color-teal-700: theme('colors.teal.700');
+    --vs-color-teal-600: theme('colors.teal.600');
+    --vs-color-teal-500: theme('colors.teal.500');
+    --vs-color-teal-400: theme('colors.teal.400');
+    --vs-color-teal-300: theme('colors.teal.300');
+    --vs-color-teal-200: theme('colors.teal.200');
+    --vs-color-teal-100: theme('colors.teal.100');
+    --vs-color-teal-50: theme('colors.teal.50');
+
+    --vs-color-purple-900: theme('colors.purple.900');
+    --vs-color-purple-800: theme('colors.purple.800');
+    --vs-color-purple-700: theme('colors.purple.700');
+    --vs-color-purple-600: theme('colors.purple.600');
+    --vs-color-purple-500: theme('colors.purple.500');
+    --vs-color-purple-400: theme('colors.purple.400');
+    --vs-color-purple-300: theme('colors.purple.300');
+    --vs-color-purple-200: theme('colors.purple.200');
+    --vs-color-purple-100: theme('colors.purple.100');
+    --vs-color-purple-50: theme('colors.purple.50');
+
+    --vs-spacing-0: theme('spacing.0');
+    --vs-spacing-1: theme('spacing.1');
+    --vs-spacing-2: theme('spacing.2');
+    --vs-spacing-3: theme('spacing.3');
+    --vs-spacing-4: theme('spacing.4');
+    --vs-spacing-5: theme('spacing.5');
+    --vs-spacing-6: theme('spacing.6');
+    --vs-spacing-8: theme('spacing.8');
+    --vs-spacing-10: theme('spacing.10');
+    --vs-spacing-12: theme('spacing.12');
+    --vs-spacing-16: theme('spacing.16');
+    --vs-spacing-20: theme('spacing.20');
+    --vs-spacing-24: theme('spacing.24');
+    --vs-spacing-32: theme('spacing.32');
+
+    --vs-line-height-4: theme('lineHeight.4'); /* 16px */
+    --vs-line-height-5: theme('lineHeight.5'); /* 20px */
+    --vs-line-height-6: theme('lineHeight.6'); /* 24px */
+    --vs-line-height-8: theme('lineHeight.8'); /* 32px */
+    --vs-line-height-12: theme('lineHeight.12'); /* 48px */
+    --vs-rounded-md: theme('borderRadius.md');
 }

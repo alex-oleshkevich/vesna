@@ -1,0 +1,88 @@
+:root {
+    --vs-alert-default-background: var(--vs-color-gray-100);
+    --vs-alert-default-color: var(--vs-color-dark-gray-2);
+    --vs-alert-default-padding: var(--vs-spacing-4);
+    --vs-alert-default-font-size: var(--vs-font-size-base);
+    --vs-alert-default-border-color: var(--vs-color-gray-200);
+    --vs-alert-default-border-width: 1px;
+    --vs-alert-default-border-radius: 6px;
+
+    --vs-alert-default-info-color: var(--vs-color-dark-gray-2);
+    --vs-alert-default-info-background: var(--vs-color-blue-100);
+    --vs-alert-default-info-border-color: var(--vs-color-blue-200);
+
+    --vs-alert-default-danger-color: var(--vs-color-dark-gray-2);
+    --vs-alert-default-danger-background: var(--vs-color-red-100);
+    --vs-alert-default-danger-border-color: var(--vs-color-red-200);
+
+    --vs-alert-default-warning-color: var(--vs-color-dark-gray-2);
+    --vs-alert-default-warning-background: var(--vs-color-yellow-100);
+    --vs-alert-default-warning-border-color: var(--vs-color-yellow-300);
+
+    --vs-alert-default-success-color: var(--vs-color-dark-gray-2);
+    --vs-alert-default-success-background: var(--vs-color-green-100);
+    --vs-alert-default-success-border-color: var(--vs-color-green-200);
+}
+
+.alert {
+    --vs-alert-background: var(--vs-alert-default-background);
+    --vs-alert-border-color: var(--vs-alert-default-border-color);
+    --vs-alert-color: var(--vs-alert-default-color);
+    --vs-alert-padding: var(--vs-alert-default-padding);
+    --vs-alert-font-size: var(--vs-alert-default-font-size);
+    --vs-alert-border-width: var(--vs-alert-default-border-width);
+
+    color: var(--vs-alert-color);
+    padding: var(--vs-alert-padding);
+    font-size: var(--vs-alert-font-size);
+    border: var(--vs-alert-border-width) solid var(--vs-alert-border-color);
+    border-radius: var(--vs-alert-default-border-radius);
+    background-color: var(--vs-alert-background);
+}
+
+.alert-success {
+    --vs-alert-color: var(--vs-alert-default-success-color);
+    --vs-alert-background: var(--vs-alert-default-success-background);
+    --vs-alert-border-color: var(--vs-alert-default-success-border-color);
+}
+
+.alert-danger,
+.alert-error {
+    --vs-alert-color: var(--vs-alert-default-danger-color);
+    --vs-alert-background: var(--vs-alert-default-danger-background);
+    --vs-alert-border-color: var(--vs-alert-default-danger-border-color);
+}
+
+.alert-info {
+    --vs-alert-color: var(--vs-alert-default-info-color);
+    --vs-alert-background: var(--vs-alert-default-info-background);
+    --vs-alert-border-color: var(--vs-alert-default-info-border-color);
+}
+
+.alert-warning {
+    --vs-alert-color: var(--vs-alert-default-warning-color);
+    --vs-alert-background: var(--vs-alert-default-warning-background);
+    --vs-alert-border-color: var(--vs-alert-default-warning-border-color);
+}
+
+.alert header,
+.alert-header {
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5;
+}
+
+.alert main,
+.alert-body {
+    --vs-alert-color: var(--vs-color-mid-gray-1);
+}
+
+.alert footer,
+.alert-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--vs-spacing-3);
+    margin-top: var(--vs-spacing-3);
+}

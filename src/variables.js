@@ -16,6 +16,7 @@ module.exports = plugin(function ({ addBase, theme }) {
             ...generateColorVariables('light-gray', 'lightGray', [900, 800, 700, 600, 500]),
             ...generateColorVariables('gray'),
             ...generateColorVariables('primary'),
+            ...generateColorVariables('blue'),
             ...generateColorVariables('red'),
             ...generateColorVariables('green'),
             ...generateColorVariables('yellow'),

@@ -25,6 +25,14 @@ const StandardTemplate = () => {
             <button class="btn btn-primary" disabled>Disabled</button>
         </div>
 
+        <h5>Accent</h5>
+        <div class="example space-x-2">
+            <button class="btn btn-sm btn-accent">Small</button>
+            <button class="btn btn-accent">Default</button>
+            <button class="btn btn-lg btn-accent">Large</button>
+            <button class="btn btn-accent" disabled>Disabled</button>
+        </div>
+
         <h5>Danger</h5>
         <div class="example space-x-2">
             <button class="btn btn-sm btn-danger">Small</button>
