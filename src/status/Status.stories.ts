@@ -1,5 +1,17 @@
+import { Story } from '@storybook/web-components';
+import './index';
+import { DotColor } from './index';
+
 export default {
     title: 'Status',
+    argTypes: {
+        color: {
+            control: 'select',
+            options: ['green', 'red', 'blue', 'yellow', 'purple', 'teal', 'black', 'white'],
+        },
+        text: {
+        },
+    },
 };
 
 const Template = () => {
@@ -117,3 +129,19 @@ const TextLeftTemplate = () => {
     `;
 };
 export const TextLeft = TextLeftTemplate.bind({});
+
+interface StatusArgs {
+    color: DotColor,
+    text: string,
+}
+
+const WebComponentTemplate: Story<Partial<StatusArgs>> = args => {
+    return `
+        <vs-status color="${args.color}" text="${args.text}"></vs-status>
+    `;
+};
+export const WebComponent = WebComponentTemplate.bind({});
+WebComponent.args = {
+    color: 'green',
+    text: 'Active',
+}

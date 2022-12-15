@@ -7,7 +7,7 @@
     height: var(--vs-dot-height);
     width: var(--vs-dot-width);
     background-color: var(--vs-dot-background-color);
-    border: 1px solid white;
+    outline: 1px solid white;
 }
 
 .dot-green {
@@ -43,7 +43,12 @@
 }
 
 .status {
+    --vs-status-font-size: var(--vs-font-size-base);
+    --vs-status-line-height: var(--vs-line-height-base);
+
     display: inline-flex;
     gap: var(--vs-spacing-2);
     align-items: center;
+    font-size: var(--vs-status-font-size);
+    line-height: var(--vs-status-line-height);
 }
