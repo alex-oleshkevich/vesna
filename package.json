@@ -1,40 +1,41 @@
 {
-    "name": "vesna",
-    "version": "0.0.1",
-    "main": "src/preset.js",
-    "private": true,
-    "repository": "git@github.com:alex-oleshkevich/vesna.git",
-    "author": "alex.oleshkevich <alex.oleshkevich@gmail.com>",
-    "license": "MIT",
-    "devDependencies": {
-        "@babel/core": "^7.16.12",
-        "@storybook/addon-a11y": "^6.4.14",
-        "@storybook/addon-actions": "^6.4.14",
-        "@storybook/addon-cssresources": "^6.2.9",
-        "@storybook/addon-docs": "^6.4.14",
-        "@storybook/addon-essentials": "^6.4.14",
-        "@storybook/addon-links": "^6.4.14",
-        "@storybook/addon-postcss": "^2.0.0",
-        "@storybook/addon-storysource": "^6.4.14",
-        "@storybook/addon-viewport": "^6.4.14",
-        "@storybook/html": "^6.4.14",
-        "autoprefixer": "^10.4.2",
-        "babel-loader": "^8.2.3",
-        "jss": "^10.9.2",
-        "jss-preset-default": "^10.9.2",
-        "postcss": "^8.4.5",
-        "prejss": "^1.4.0",
-        "storybook-addon-pseudo-states": "^1.0.0",
-        "tailwindcss": "^3.0.15"
-    },
-    "dependencies": {
-        "@storybook/builder-webpack5": "^6.5.14",
-        "@storybook/manager-webpack5": "^6.5.14",
-        "@tailwindcss/typography": "^0.5.0",
-        "lit": "^2.5.0"
-    },
-    "scripts": {
-        "storybook": "start-storybook -p 6006 --no-open",
-        "build-storybook": "build-storybook"
-    }
+  "name": "newapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/my-element.es.js",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "storybook": "start-storybook -p 6006 --no-open",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.8",
+    "autoprefixer": "^10.4.13",
+    "lit": "^2.5.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/web-components": "^6.5.14",
+    "babel-loader": "^8.3.0",
+    "lit-html": "^2.5.0",
+    "postcss": "^8.4.20",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
 }

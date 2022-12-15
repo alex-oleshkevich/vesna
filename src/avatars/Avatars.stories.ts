@@ -1,5 +1,36 @@
+import { Story } from '@storybook/web-components';
+import './index';
+import { AvatarColor, AvatarShape, AvatarSize, AvatarStatusColor, AvatarStatusPosition } from './index';
+
 export default {
     title: 'Avatars',
+    component: 'vs-avatar',
+    argTypes: {
+        size: {
+            options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],
+            control: { type: 'select' },
+        },
+        color: {
+            options: ['blue', 'red', 'green', 'yellow', 'purple', 'teal', 'gray'],
+            control: { type: 'select' },
+        },
+        shape: {
+            options: ['rounded', 'square'],
+            control: { type: 'radio' },
+        },
+        status: {
+            options: ['', 'gray', 'green'],
+            control: { type: 'radio' },
+        },
+        statusPosition: {
+            options: ['bottom', 'top'],
+            control: { type: 'radio' },
+        },
+        content: {
+            options: ['image', 'text'],
+            control: { type: 'radio' },
+        }
+    }
 };
 
 const ImagesTemplate = () => {
@@ -50,7 +81,7 @@ const ImagesTemplate = () => {
 `;
 };
 
-export const Images = ImagesTemplate.bind();
+export const Images = ImagesTemplate.bind({});
 
 const WithStatusTemplate = () => {
     return `        
@@ -143,7 +174,7 @@ const WithStatusTemplate = () => {
 </div>
 `;
 };
-export const WithStatus = WithStatusTemplate.bind();
+export const WithStatus = WithStatusTemplate.bind({});
 
 const WithBottomStatusTemplate = () => {
     return `        
@@ -236,7 +267,7 @@ const WithBottomStatusTemplate = () => {
     </div>
 `;
 };
-export const WithBottomStatus = WithBottomStatusTemplate.bind();
+export const WithBottomStatus = WithBottomStatusTemplate.bind({});
 
 
 const InitialsRoundedTemplate = () => {
@@ -383,7 +414,7 @@ const InitialsRoundedTemplate = () => {
 `;
 };
 
-export const InitialsRounded = InitialsRoundedTemplate.bind();
+export const InitialsRounded = InitialsRoundedTemplate.bind({});
 
 const InitialsSquareTemplate = () => {
     return `
@@ -529,4 +560,40 @@ const InitialsSquareTemplate = () => {
 `;
 };
 
-export const InitialsSquare = InitialsSquareTemplate.bind();
+export const InitialsSquare = InitialsSquareTemplate.bind({});
+
+
+interface AvatarProps {
+    size: AvatarSize,
+    color: AvatarColor,
+    shape: AvatarShape,
+    status: AvatarStatusColor,
+    statusPosition: AvatarStatusPosition,
+    content: 'text' | 'image',
+}
+
+const WebComponentTemplate: Story<Partial<AvatarProps>> = (args) => {
+    const content = args.content == 'text' ? '<span>WW</span>' : '<img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">';
+    return `
+    <vs-avatar 
+        size="${args.size}"
+        color="${args.color}"
+        shape="${args.shape}"
+        status="${args.status}"
+        status-position="${args.statusPosition}"
+    >
+        ${content}
+    </vs-avatar>
+    `
+};
+
+export const WebComponent = WebComponentTemplate.bind({});
+WebComponent.args = {
+    size: 'xl',
+    color: 'blue',
+    shape: 'rounded',
+    status: 'green',
+    statusPosition: 'bottom',
+    content: 'image',
+};
+

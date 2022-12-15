@@ -1,4 +1,4 @@
-const colors = require('./colors');
+const colors = require('./colors.cjs');
 
 function hexToChannels(hex) {
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -117,10 +117,10 @@ module.exports = {
         },
     },
     plugins: [
-        require('@tailwindcss/typography'),
-        require('./variables'),
-        require('./common'),
-        require('./typography'),
+        // require('@tailwindcss/typography'),
+        // require('./variables'),
+        // require('./common'),
+        // require('./typography'),
 
         // // core
         // require('./close'),

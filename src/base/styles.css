@@ -1,5 +1,11 @@
 :root {
     --vs-font-family: theme('fontFamily.sans');
+    --vs-font-family-base: theme('fontFamily.sans'), '-webkit-font-smoothing': 'antialiased';
+    --vs-font-weight-base: 400;
+    --vs-font-weight-medium: theme('fontWeight.medium');
+    --vs-font-weight-semibold: theme('fontWeight.semibold');
+    --vs-font-weight-bold: theme('fontWeight.bold');
+
     --vs-font-size-xs: 10px;
     --vs-font-size-sm: theme('fontSize.sm');
     --vs-font-size-base: theme('fontSize.base');
@@ -11,6 +17,8 @@
 
     --vs-color-white: theme('colors.white');
     --vs-color-black: theme('colors.black');
+    --vs-color-base: theme('colors.dark-gray.800');
+    --vs-color-link: theme('colors.blue.600');
 
     --vs-color-gray-900: theme('colors.gray.900');
     --vs-color-gray-800: theme('colors.gray.800');
@@ -142,5 +150,8 @@
     --vs-line-height-6: theme('lineHeight.6'); /* 24px */
     --vs-line-height-8: theme('lineHeight.8'); /* 32px */
     --vs-line-height-12: theme('lineHeight.12'); /* 48px */
+    --vs-line-height-base: var(--vs-line-height-6);
+
+
     --vs-rounded-md: theme('borderRadius.md');
 }
