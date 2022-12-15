@@ -1,0 +1,140 @@
+.badge {
+    --vs-badge-padding: 0 var(--vs-spacing-2);
+    --vs-badge-background-color: var(--vs-color-dark-gray-5);
+    --vs-badge-color: var(--vs-color-light-gray-5);
+    --vs-badge-border-radius: var(--vs-rounded-md);
+    --vs-badge-font-size: var(--vs-font-size-base);
+    --vs-badge-line-height: var(--vs-line-height-base);
+    --vs-badge-font-weight: var(--vs-font-weight-semibold);
+    --vs-badge-gap: var(--vs-spacing-1);
+    --vs-badge-outline-color: transparent;
+
+    display: inline-flex;
+    align-items: center;
+    padding: var(--vs-badge-padding);
+    background-color: var(--vs-badge-background-color);
+    color: var(--vs-badge-color);
+    border-radius: var(--vs-badge-border-radius);
+    font-size: var(--vs-badge-font-size);
+    line-height: var(--vs-badge-line-height);
+    font-weight: var(--vs-badge-font-weight);
+    gap: var(--vs-badge-gap);
+    outline: 1px solid var(--vs-badge-outline-color);
+}
+
+.badge > svg {
+    color: white;
+}
+
+.badge-sm {
+    --vs-badge-font-size: var(--vs-font-size-sm);
+    --vs-badge-line-height: var(--vs-line-height-4);
+    --vs-badge-padding: 0 var(--vs-spacing-1);
+}
+
+.badge-lg {
+    --vs-badge-padding: var(--vs-spacing-1) var(--vs-spacing-3);
+}
+
+.badge-red {
+    --vs-badge-color: var(--vs-color-red-100);
+    --vs-badge-background-color: var(--vs-color-red-500);
+}
+
+.badge-red.badge-subtle {
+    --vs-badge-color: var(--vs-color-red-700);
+    --vs-badge-background-color: var(--vs-color-red-100);
+}
+
+.badge.badge-outline {
+    --vs-badge-background-color: var(--vs-color-white);
+}
+
+.badge-red.badge-outline {
+    --vs-badge-color: var(--vs-color-red-700);
+    --vs-badge-outline-color: var(--vs-color-red-200);
+}
+
+.badge-blue {
+    --vs-badge-color: var(--vs-color-blue-100);
+    --vs-badge-background-color: var(--vs-color-blue-500);
+}
+
+.badge-blue.badge-subtle {
+    --vs-badge-color: var(--vs-color-blue-700);
+    --vs-badge-background-color: var(--vs-color-blue-100);
+}
+.badge-blue.badge-outline {
+    --vs-badge-color: var(--vs-color-blue-700);
+    --vs-badge-outline-color: var(--vs-color-blue-200);
+}
+
+.badge-green {
+    --vs-badge-color: var(--vs-color-green-100);
+    --vs-badge-background-color: var(--vs-color-green-500);
+}
+.badge-green.badge-subtle {
+    --vs-badge-color: var(--vs-color-green-700);
+    --vs-badge-background-color: var(--vs-color-green-100);
+}
+.badge-green.badge-outline {
+    --vs-badge-color: var(--vs-color-green-700);
+    --vs-badge-outline-color: var(--vs-color-green-200);
+}
+
+.badge-yellow {
+    --vs-badge-color: var(--vs-color-yellow-800);
+    --vs-badge-background-color: var(--vs-color-yellow-500);
+}
+.badge-yellow.badge-subtle {
+    --vs-badge-color: var(--vs-color-yellow-800);
+    --vs-badge-background-color: var(--vs-color-yellow-100);
+}
+.badge-yellow.badge-outline {
+    --vs-badge-color: var(--vs-color-yellow-800);
+    --vs-badge-outline-color: var(--vs-color-yellow-300);
+}
+
+.badge-purple {
+    --vs-badge-color: var(--vs-color-purple-100);
+    --vs-badge-background-color: var(--vs-color-purple-500);
+}
+.badge-purple.badge-subtle {
+    --vs-badge-color: var(--vs-color-purple-700);
+    --vs-badge-background-color: var(--vs-color-purple-100);
+}
+.badge-purple.badge-outline {
+    --vs-badge-color: var(--vs-color-purple-700);
+    --vs-badge-outline-color: var(--vs-color-purple-200);
+}
+
+.badge-teal {
+    --vs-badge-color: var(--vs-color-teal-100);
+    --vs-badge-background-color: var(--vs-color-teal-500);
+}
+.badge-teal.badge-subtle {
+    --vs-badge-color: var(--vs-color-teal-700);
+    --vs-badge-background-color: var(--vs-color-teal-100);
+}
+.badge-teal.badge-outline {
+    --vs-badge-color: var(--vs-color-teal-700);
+    --vs-badge-outline-color: var(--vs-color-teal-200);
+}
+
+.badge-gray {
+    --vs-badge-color: var(--vs-color-light-gray-5);
+    --vs-badge-background-color: var(--vs-color-dark-gray-5);
+}
+.badge-gray.badge-subtle {
+    --vs-badge-color: var(--vs-color-dark-gray-2);
+    --vs-badge-background-color: var(--vs-color-light-gray-4);
+}
+.badge-gray.badge-outline {
+    --vs-badge-color: var(--vs-color-dark-gray-2);
+    --vs-badge-outline-color: var(--vs-color-light-gray-3);
+}
+
+.badge-outline > svg,
+.badge-subtle > svg {
+    color: currentColor;
+}
