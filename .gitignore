@@ -4,3 +4,5 @@ current_css
 storybook-static
 colors.html
 output.css
+dist
+old_*
