@@ -182,3 +182,12 @@ const IconOnlyTemplate = () => {
         `;
 };
 export const IconOnly = IconOnlyTemplate.bind({});
+
+
+
+const CloseButtonTemplate = () => {
+    return `<button class="btn-close"></button>`;
+};
+
+export const CloseButton = CloseButtonTemplate.bind({});
+

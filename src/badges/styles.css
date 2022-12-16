@@ -22,10 +22,6 @@
     outline: 1px solid var(--vs-badge-outline-color);
 }
 
-.badge > svg {
-    color: white;
-}
-
 .badge-sm {
     --vs-badge-font-size: var(--vs-font-size-sm);
     --vs-badge-line-height: var(--vs-line-height-4);
@@ -137,4 +133,38 @@
 .badge-outline > svg,
 .badge-subtle > svg {
     color: currentColor;
+}
+
+.badge .btn-close {
+    height: 16px;
+    width: 16px;
+    background-size: 85%;
+}
+
+.badge-blue .btn-close, .badge-blue.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(235, 247, 255, .7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-red .btn-close, .badge-red.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255, 239, 235, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-green .btn-close, .badge-green.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(235, 255, 241, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-yellow .btn-close, .badge-yellow.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(210, 148, 4, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-purple .btn-close, .badge-purple.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(252, 240, 255, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-teal .btn-close, .badge-teal.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(228, 252, 252, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+.badge-gray .btn-close, .badge-gray.badge-filled .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(246, 248, 249, 0.7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
 }

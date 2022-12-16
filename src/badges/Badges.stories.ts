@@ -1,6 +1,6 @@
 import { Story } from '@storybook/web-components';
-import './index';
 import { BadgeColor, BadgeSize, BadgeVariant } from './element';
+import './index';
 
 export default {
     title: 'Badges',
@@ -20,6 +20,14 @@ export default {
         },
         closeable: {
             control: { type: 'boolean' },
+        },
+        onClose: {
+            action: 'closed',
+        }
+    },
+    parameters: {
+        actions: {
+            handles: ['vs-close']
         }
     }
 };
@@ -50,9 +58,24 @@ const WithIconTemplate: Story<Partial<BadgeProps>> = args => {
 export const WithIcon = WithIconTemplate.bind({});
 WithIcon.args = { size: 'md', variant: 'filled', color: 'blue', closeable: false }
 
+
+
+const WithRemoveButtonTemplate: Story<Partial<BadgeProps>> = args => {
+    return `<div class="badge badge-${args.size} badge-${args.color} badge-${args.variant}">${folderIcon} Badge <button class="btn-close"></button></div>`;
+};
+
+export const WithRemoveButton = WithRemoveButtonTemplate.bind({});
+WithRemoveButton.args = { size: 'md', variant: 'filled', color: 'blue', closeable: false }
+
+
 const WebComponentTemplate: Story<Partial<BadgeProps>> = args => {
     return `
-    <vs-badge color="${args.color}" size="${args.size}" variant="${args.variant}">
+    <vs-badge 
+        color="${args.color}" 
+        size="${args.size}" 
+        variant="${args.variant}" 
+        ${args.closeable ? 'closeable="true"' : ''}
+        >
         <span>Badge</span>
     </vs-badge>`;
 };
