@@ -153,5 +153,9 @@
     --vs-line-height-base: var(--vs-line-height-6);
 
 
+    --vs-rounded-sm: theme('borderRadius.sm');
     --vs-rounded-md: theme('borderRadius.md');
+    --vs-rounded-lg: theme('borderRadius.lg');
+    --vs-rounded-xl: theme('borderRadius.xl');
+    --vs-rounded-2xl: theme('borderRadius.2xl');
 }

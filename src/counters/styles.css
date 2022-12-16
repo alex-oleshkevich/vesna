@@ -1,0 +1,42 @@
+.counter {
+    --vs-counter-background-color: var(--vs-color-red-500);
+    --vs-counter-color: var(--vs-color-white);
+    --vs-counter-font-size: var(--vs-font-size-base);
+    --vs-counter-line-height: var(--vs-line-height-base);
+    --vs-counter-font-weight: var(--vs-font-weight-semibold);
+    --vs-counter-padding: 0 var(--vs-spacing-2);
+    --vs-counter-border-radius: var(--vs-rounded-xl);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vs-counter-color);
+    background-color: var(--vs-counter-background-color);
+    border-radius: var(--vs-counter-border-radius);
+    font-size: var(--vs-counter-font-size);
+    line-height: var(--vs-counter-line-height);
+    font-weight: var(--vs-counter-font-weight);
+    padding: var(--vs-counter-padding);
+}
+
+.counter-sm {
+    --vs-counter-padding: var(--vs-spacing-0) var(--vs-spacing-1);
+    --vs-counter-border-radius: var(--vs-rounded-lg);
+    --vs-counter-font-size: var(--vs-font-size-sm);
+    --vs-counter-line-height: var(--vs-line-height-4);
+}
+
+.counter-lg {
+    --vs-counter-padding: var(--vs-spacing-1) var(--vs-spacing-3);
+    --vs-counter-border-radius: var(--vs-rounded-2xl);
+}
+
+.counter-subtle {
+    --vs-counter-color: var(--vs-color-red-700);
+    --vs-counter-background-color: var(--vs-color-red-200);
+}
+.counter-outline {
+    --vs-counter-color: var(--vs-color-red-700);
+    --vs-counter-background-color: var(--vs-color-white);
+    outline: 1px solid var(--vs-color-red-200);
+}
