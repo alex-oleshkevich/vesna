@@ -1,6 +1,6 @@
 import { html, LitElement, PropertyValues } from "lit";
 import { classMap } from "lit-html/directives/class-map.js";
-import { Ref, createRef, ref } from "lit-html/directives/ref.js";
+import { createRef, Ref, ref } from "lit-html/directives/ref.js";
 import { customElement, property } from "lit/decorators.js";
 
 export type BadgeSize = 'sm' | 'md' | 'lg';
@@ -12,7 +12,7 @@ export class Badge extends LitElement {
     @property() size: BadgeSize = 'md';
     @property() color: BadgeColor = 'gray';
     @property() variant: BadgeVariant = 'filled';
-    @property() closeable: boolean = false;
+    @property({ type: Boolean }) closeable: boolean = false;
 
     private _closeButtonRef: Ref<HTMLButtonElement> = createRef();
 

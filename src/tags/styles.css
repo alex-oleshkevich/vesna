@@ -1,0 +1,82 @@
+.tag {
+    --vs-tag-background-color: var(--vs-color-light-gray-3);
+    --vs-tag-color: var(--vs-color-dark-gray-2);
+    --vs-tag-font-size: var(--vs-font-size-base);
+    --vs-tag-line-height: var(--vs-line-height-base);
+    --vs-tag-font-weight: var(--vs-font-weight-semibold);
+    --vs-tag-padding: var(--vs-spacing-0) var(--vs-spacing-1);
+    --vs-tag-border-radius: var(--vs-rounded-xl);
+    --vs-tag-gap: var(--vs-spacing-1);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--vs-tag-gap);
+    color: var(--vs-tag-color);
+    background-color: var(--vs-tag-background-color);
+    border-radius: var(--vs-tag-border-radius);
+    font-size: var(--vs-tag-font-size);
+    line-height: var(--vs-tag-line-height);
+    font-weight: var(--vs-tag-font-weight);
+    padding: var(--vs-tag-padding);
+}
+
+.tag-outline {
+    --vs-tag-background-color: var(--vs-color-white);
+    outline: 1px solid var(--vs-color-light-gray-2);
+}
+
+.tag-text {
+    --vs-tag-background-color: transparent;
+}
+
+.tag-sm {
+    --vs-tag-padding: var(--vs-spacing-0) var(--vs-spacing-1);
+    --vs-tag-border-radius: var(--vs-rounded-lg);
+    --vs-tag-font-size: var(--vs-font-size-sm);
+    --vs-tag-line-height: var(--vs-line-height-4);
+}
+
+.tag-lg {
+    --vs-tag-padding: var(--vs-spacing-1) var(--vs-spacing-3);
+    --vs-tag-border-radius: var(--vs-rounded-2xl);
+}
+
+.tag .btn-close {
+    height: 16px;
+    width: 16px;
+    background-size: 85%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(37, 44, 50, .7)' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
+}
+
+vs-tag > div.tag > div:first-child {
+    display: flex;
+    gap: var(--vs-tag-gap);
+    align-items: center;
+}
+
+.tag:has(.avatar) {
+    --vs-tag-border-radius: var(--vs-rounded-2xl);
+    --vs-tag-padding: var(--vs-spacing-0) var(--vs-spacing-1);
+    padding-right: var(--vs-spacing-2);
+}
+
+.tag-lg.tag:has(.avatar) {
+    --vs-tag-padding: var(--vs-spacing-1) var(--vs-spacing-1);
+    padding-right: var(--vs-spacing-3);
+}
+
+.tag-sm.tag:has(.avatar) {
+    --vs-tag-padding: var(--vs-spacing-0) var(--vs-spacing-0);
+    padding-right: var(--vs-spacing-2);
+}
+
+.tag .avatar {
+    height: var(--vs-spacing-4);
+    width: var(--vs-spacing-4);
+}
+
+.tag-lg .avatar {
+    height: var(--vs-spacing-6);
+    width: var(--vs-spacing-6);
+}

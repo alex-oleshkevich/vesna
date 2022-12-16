@@ -19,7 +19,6 @@
     line-height: var(--vs-avatar-line-height);
     border-radius: var(--vs-avatar-border-radius);
     background-color: var(--vs-avatar-background-color);
-    border: 1px solid transparent;
 }
 
 .avatar img,
