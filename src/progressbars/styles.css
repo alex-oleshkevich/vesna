@@ -1,0 +1,94 @@
+.progress {
+    --vs-progressbar-border-radius: var(--vs-rounded-base);
+    --vs-progressbar-color: var(--vs-color-white);
+    --vs-progressbar-background-color: var(--vs-color-blue-200);
+    --vs-progressbar-bar-background-color: var(--vs-color-blue-500);
+    --vs-progressbar-height: var(--vs-spacing-2);
+    --vs-progressbar-font-size: var(--vs-font-size-base);
+    --vs-progressbar-font-weight: var(--vs-font-weight-semibold);
+    --vs-progressbar-line-height: var(--vs-line-height-base);
+
+    background-color: var(--vs-progressbar-background-color);
+    border-radius: var(--vs-progressbar-border-radius);
+    overflow: hidden;
+}
+
+.progress .progress-bar {
+    color: var(--vs-progressbar-color);
+    font-size: var(--vs-progressbar-font-size);
+    line-height: var(--vs-progressbar-line-height);
+    background-color: var(--vs-progressbar-bar-background-color);
+    height: var(--vs-progressbar-height);
+    transition: width 100ms ease-in-out;
+    font-weight: var(--vs-font-weight-semibold);
+    text-align: right;
+    padding-right: var(--vs-spacing-2);
+}
+
+.progress-sm .progress-bar {
+    --vs-progressbar-height: 2px;
+    --vs-progressbar-border-radius: 2px;
+}
+
+.progress-lg .progress-bar {
+    --vs-progressbar-height: var(--vs-spacing-6);
+}
+
+.progress-vertical {
+    transform: rotate(-90deg);
+}
+
+.progress-indeterminate .progress-bar {
+    width: 100% !important;
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: var(--vs-spacing-4) var(--vs-spacing-4);
+    animation: 1s linear infinite progress-bar-stripes;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 48px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.progress-green {
+    --vs-progressbar-background-color: var(--vs-color-green-200);
+    --vs-progressbar-bar-background-color: var(--vs-color-green-500);
+}
+
+.progress-red {
+    --vs-progressbar-background-color: var(--vs-color-red-200);
+    --vs-progressbar-bar-background-color: var(--vs-color-red-500);
+}
+
+.progress-purple {
+    --vs-progressbar-background-color: var(--vs-color-purple-200);
+    --vs-progressbar-bar-background-color: var(--vs-color-purple-500);
+}
+
+.progress-teal {
+    --vs-progressbar-background-color: var(--vs-color-teal-200);
+    --vs-progressbar-bar-background-color: var(--vs-color-teal-500);
+}
+
+.progress-gray {
+    --vs-progressbar-background-color: var(--vs-color-light-gray-3);
+    --vs-progressbar-bar-background-color: var(--vs-color-dark-gray-2);
+}
+
+.progress-yellow {
+    --vs-progressbar-background-color: var(--vs-color-yellow-100);
+    --vs-progressbar-bar-background-color: var(--vs-color-yellow-800);
+}

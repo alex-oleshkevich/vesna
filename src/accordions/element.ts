@@ -26,10 +26,12 @@ export class Accordion extends LitElement {
 
     expand() {
         this.open = true;
+        this.dispatchEvent(new CustomEvent('vs-open', { bubbles: true }));
     }
 
     collapse() {
         this.open = false;
+        this.dispatchEvent(new CustomEvent('vs-close', { bubbles: true }));
     }
 
     toggle() {

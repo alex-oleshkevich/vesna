@@ -154,6 +154,7 @@
 
 
     --vs-rounded-sm: theme('borderRadius.sm');
+    --vs-rounded-base: theme('borderRadius.DEFAULT');
     --vs-rounded-md: theme('borderRadius.md');
     --vs-rounded-lg: theme('borderRadius.lg');
     --vs-rounded-xl: theme('borderRadius.xl');
