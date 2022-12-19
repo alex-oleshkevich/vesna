@@ -1,0 +1,116 @@
+.accordion {
+    --vs-accordion-header-font-color: var(--vs-color-dark-gray-2);
+    --vs-accordion-header-background-color: var(--vs-color-transparent);
+    --vs-accordion-header-hover-background-color: var(--vs-color-transparent);
+    --vs-accordion-header-active-background-color: var(--vs-color-transparent);
+
+    --vs-accordion-header-disabled-color: var(--vs-color-dark-gray-5);
+    --vs-accordion-header-disabled-background-color: var(--vs-color-transparent);
+
+    --vs-accordion-background-color: var(--vs-color-white);
+    --vs-accordion-font-size: var(--vs-font-size-base);
+    --vs-accordion-font-color: var(--vs-font-dark-gray-2);
+    --vs-accordion-line-height: var(--vs-line-height-base);
+    --vs-accordion-padding: var(--vs-spacing-1) var(--vs-spacing-2);
+    --vs-accordion-border-radius: var(--vs-rounded-md);
+    --vs-accordion-border-color: var(--vs-color-light-gray-3);
+
+    background-color: var(--vs-accordion-background-color);
+    font-size: var(--vs-accordion-font-size);
+    line-height: var(--vs-accordion-line-height);
+    color: var(--vs-accordion-font-color);
+    border-radius: var(--vs-accordion-border-radius);
+}
+
+.accordion-filled {
+    --vs-accordion-header-background-color: var(--vs-color-light-gray-5);
+    --vs-accordion-header-hover-background-color: var(--vs-color-light-gray-4);
+    --vs-accordion-header-active-background-color: var(--vs-color-light-gray-3);
+    --vs-accordion-header-disabled-background-color: var(--vs-color-light-gray-5);
+    border: 1px solid var(--vs-accordion-border-color);
+}
+
+.accordion button,
+.accordion-header {
+    color: var(--vs-accordion-header-font-color);
+    background-color: var(--vs-accordion-header-background-color);
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: var(--vs-accordion-padding);
+    display: flex;
+    align-items: center;
+    gap: var(--vs-spacing-2);
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+.accordion-filled .accordion button,
+.accordion-filled .accordion-header {
+    border-bottom: 1px solid transparent;
+}
+
+.accordion:not(.disabled) button:hover,
+.accordion:not(.disabled) .accordion-header:hover:not(.disabled) {
+    --vs-accordion-header-background-color: var(--vs-accordion-header-hover-background-color);
+}
+
+.accordion:not(.disabled) button:active:not(.disabled),
+.accordion:not(.disabled) .accordion-header:active:not(.disabled) {
+    --vs-accordion-header-background-color: var(--vs-accordion-header-active-background-color);
+}
+
+.accordion.disabled,
+.accordion.disabled {
+    --vs-accordion-header-color: var(--vs-accordion-header-disabled-color);
+    --vs-accordion-header-background-color: var(--vs-accordion-header-disabled-background-color);
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.accordion main,
+.accordion-body {
+    visibility: hidden;
+    height: 0;
+    border-bottom: 1px solid var(--vs-accordion-border-color);
+}
+
+.accordion-filled main,
+.accordion-filled .accordion-body {
+    border-bottom: none;
+}
+
+.accordion.accordion-filled.open button,
+.accordion.accordion-filled.open .accordion-header {
+    border-bottom: 1px solid var(--vs-accordion-border-color);
+}
+
+.accordion.open main,
+.accordion.open .accordion-body {
+    visibility: visible;
+    height: auto;
+    padding: var(--vs-accordion-padding);
+}
+
+.accordion-icon {
+    transform: rotate(-90deg);
+    transition: all 150ms ease-in-out;
+    background-image: url("data:image/svg+xml, %3Csvg width='16' height='24' viewBox='0 0 16 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10.5L8 14.5L12 10.5' stroke='%239AA6AC'/%3E%3C/svg%3E");
+}
+
+.accordion.open .accordion-icon {
+    transform: rotate(0deg);
+}
+
+.accordion-sm {
+    --vs-accordion-padding: var(--vs-spacing-0) var(--vs-spacing-1);
+}
+
+.accordion-lg {
+    --vs-accordion-padding: var(--vs-spacing-2) var(--vs-spacing-2);
+}
+
+.accordion-filled {
+}

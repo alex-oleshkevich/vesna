@@ -1,7 +1,8 @@
 @import './base/styles.css';
 @import './base/typography.css';
-@import './avatars/styles.css';
+@import './accordions/styles.css';
 @import './alerts/styles.css';
+@import './avatars/styles.css';
 @import './badges/styles.css';
 @import './buttons/styles.css';
 @import './counters/styles.css';
