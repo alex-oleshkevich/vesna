@@ -189,3 +189,41 @@
     right: -4%;
     top: -4%;
 }
+
+.avatar-stack {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-stack .avatar:not(:first-child) {
+    --vs-avatar-stack-offset: -6px;
+    --vs-avatar-stack-outline-width: 2px;
+    outline: var(--vs-avatar-stack-outline-width) solid white;
+    margin-left: var(--vs-avatar-stack-offset);
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-xs {
+    --vs-avatar-stack-offset: -2px;
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-sm {
+    --vs-avatar-stack-offset: -4px;
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-md {
+    --vs-avatar-stack-offset: -6px;
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-lg {
+    --vs-avatar-stack-offset: -10px;
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-xl {
+    --vs-avatar-stack-offset: -12px;
+    --vs-avatar-stack-outline-width: 3px;
+}
+
+.avatar-stack .avatar:not(:first-child).avatar-2xl {
+    --vs-avatar-stack-offset: -16px;
+    --vs-avatar-stack-outline-width: 4px;
+}

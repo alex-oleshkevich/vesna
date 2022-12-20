@@ -1,6 +1,9 @@
-import { html, LitElement } from 'lit';
+import { html, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
+
+import style from './styles.css?inline';
+
 
 export type AvatarSize = '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
 export type AvatarColor = 'blue' | 'red' | 'green' | 'yellow' | 'purple' | 'teal' | 'gray';

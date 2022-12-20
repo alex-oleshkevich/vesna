@@ -33,6 +33,15 @@ export default {
     }
 };
 
+const defaults = {
+    size: 'xl',
+    color: 'blue',
+    shape: 'rounded',
+    status: 'green',
+    statusPosition: 'bottom',
+    content: 'image',
+};
+
 const ImagesTemplate = () => {
     return `        
 <h5>Rounded</h5>
@@ -563,6 +572,38 @@ const InitialsSquareTemplate = () => {
 export const InitialsSquare = InitialsSquareTemplate.bind({});
 
 
+const AvatarStackTemplate = args => {
+    return `
+    <h5>Blue</h5>
+    <div class="example space-y-2">
+        <div>
+            <div class="avatar-stack">
+                <div class="avatar avatar-blue avatar-${args.size}">
+                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-blue avatar-${args.size}">
+                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-blue avatar-${args.size}">
+                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-blue avatar-${args.size}">
+                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-blue avatar-${args.size}">
+                    <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-blue avatar-${args.size}">+3</div>
+            </div>
+        </div>
+    </div>
+`;
+};
+
+export const AvatarStack = AvatarStackTemplate.bind({});
+AvatarStack.args = defaults;
+
+
 interface AvatarProps {
     size: AvatarSize,
     color: AvatarColor,
@@ -588,12 +629,5 @@ const WebComponentTemplate: Story<Partial<AvatarProps>> = (args) => {
 };
 
 export const WebComponent = WebComponentTemplate.bind({});
-WebComponent.args = {
-    size: 'xl',
-    color: 'blue',
-    shape: 'rounded',
-    status: 'green',
-    statusPosition: 'bottom',
-    content: 'image',
-};
+WebComponent.args = defaults;
 
