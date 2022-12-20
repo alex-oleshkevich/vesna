@@ -124,10 +124,10 @@ module.exports = plugin(function ({ addComponents, theme }) {
         // animations
         '@keyframes indeterminate-spinner-container': {
             '0%': {
-                transform: 'rotateZ(0deg)',
+                transform: 'rotate(0deg)',
             },
             '100%': {
-                transform: 'rotateZ(360deg)',
+                transform: 'rotate(270deg)',
             },
         },
 

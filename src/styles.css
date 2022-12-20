@@ -8,4 +8,5 @@
 @import './counters/styles.css';
 @import './progressbars/styles.css';
 @import './status/styles.css';
+@import './spinner/styles.css';
 @import './tags/styles.css';

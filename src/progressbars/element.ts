@@ -17,7 +17,7 @@ export class ProgressBar extends LitElement {
     @property() color: ProgressBarColor = 'blue';
     @property({ type: Boolean }) indeterminate: boolean = false;
     @property({ type: Boolean }) indicator: boolean = false;
-    @property({ type: Number, reflect: true }) value: number = 9;
+    @property({ type: Number, reflect: true }) value: number = 0;
 
     static styles = [unsafeCSS(style)];
 

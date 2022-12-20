@@ -40,13 +40,14 @@ interface Props {
     indeterminate: boolean,
 }
 
-const defaults = { size: 'md', variant: 'filled', title: 'Dialog', value: 42, indicator: false, indeterminate: false, color: 'blue' };
+const defaults = { size: 'md', variant: 'horizontal', value: 42, indicator: false, indeterminate: false, color: 'blue' };
 
 
 const Template: Story<Partial<Props>> = args => {
+    const indicatorPartial = args.indicator ? `${args.value}%` : '';
     return `
-    <div class="progress progress-${args.size} progress-${args.color}">
-        <div class="progress-bar" style="width: ${args.value}%"></div>
+    <div class="progress progress-${args.size} progress-${args.color} ${args.indeterminate ? 'progress-indeterminate' : ''}">
+        <div class="progress-bar" style="width: ${args.value}%">${indicatorPartial}</div>
     </div>
     `;
 };

@@ -6,4 +6,5 @@ export * from './buttons';
 export * from './counters';
 export * from './progressbars';
 export * from './status';
+export * from './spinner';
 export * from './tags';
