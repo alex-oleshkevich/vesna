@@ -2,6 +2,7 @@ export * from './accordions';
 export * from './alerts';
 export * from './avatars';
 export * from './badges';
+export * from './breadcrumbs';
 export * from './buttons';
 export * from './counters';
 export * from './progressbars';

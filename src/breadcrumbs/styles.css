@@ -1,0 +1,71 @@
+.breadcrumbs {
+    --vs-breadcrumbs-font-size: var(--vs-font-size-base);
+    --vs-breadcrumbs-line-height: var(--vs-line-height-base);
+    --vs-breadcrumbs-background-color: transparent;
+    --vs-breadcrumbs-icon-color: var(--vs-color-mid-gray-5);
+    --vs-breadcrumbs-color: var(--vs-color-mid-gray-2);
+    --vs-breadcrumbs-border-radius: var(--vs-rounded-base);
+
+    font-size: var(--vs-breadcrumbs-font-size);
+    line-height: var(--vs-breadcrumbs-line-height);
+    display: flex;
+    gap: var(--vs-spacing-2);
+    align-items: center;
+}
+
+.breadcrumbs-item {
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--vs-breadcrumbs-color);
+    gap: var(--vs-spacing-1);
+    background-color: var(--vs-breadcrumbs-background-color);
+    border-radius: var(--vs-breadcrumbs-border-radius);
+    transition: background-color 150ms ease;
+}
+
+.breadcrumbs-item > svg {
+    color: var(--vs-breadcrumbs-icon-color);
+}
+
+.breadcrumbs:not(.breadcrumbs-section) a.breadcrumbs-item:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+    content: ' ';
+    display: block;
+    width: var(--vs-spacing-3);
+    height: var(--vs-spacing-4);
+    box-sizing: content-box;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L5.5 5L1 9.5' stroke='%23B0BABF'/%3E%3C/svg%3E%0A");
+}
+
+.breadcrumbs-item.active {
+    --vs-breadcrumbs-color: var(--vs-color-dark-gray-2);
+}
+
+.breadcrumbs-sm {
+    --vs-breadcrumbs-font-size: var(--vs-font-size-sm);
+    --vs-breadcrumbs-line-height: var(--vs-line-height-4);
+}
+
+.breadcrumbs-item.root {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 12C9 12.5523 8.55228 13 8 13C7.44772 13 7 12.5523 7 12C7 11.4477 7.44772 11 8 11C8.55228 11 9 11.4477 9 12Z' fill='%236E7C87'/%3E%3Cpath d='M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z' fill='%236E7C87'/%3E%3Cpath d='M16 13C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11C15.4477 11 15 11.4477 15 12C15 12.5523 15.4477 13 16 13Z' fill='%236E7C87'/%3E%3C/svg%3E%0A");
+}
+
+.breadcrumbs-item.root:not(:last-child):after {
+    padding-left: var(--vs-spacing-4);
+}
+
+.breadcrumbs-section .breadcrumbs-item:hover {
+    --vs-breadcrumbs-background-color: var(--vs-color-light-gray-4);
+}
+
+.breadcrumbs-section .breadcrumbs-item:active {
+    --vs-breadcrumbs-background-color: var(--vs-color-light-gray-3);
+}
