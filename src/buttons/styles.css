@@ -206,39 +206,6 @@
     --vs-button-background-color: var(--vs-color-red-300);
 }
 
-.btn-close {
-    --vs-button-background-color: transparent;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 24px;
-    width: 24px;
-    background-position: center;
-    background-size: 95%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23252C32'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E");
-    background-color: var(--vs-button-background-color);
-    border-radius: var(--vs-rounded-md);
-    transition-property: border, color, background-color;
-    transition-duration: 150ms;
-    transition-timing-function: ease-in-out;
-}
-
-.btn-close:hover,
-button.close:hover {
-    --vs-button-background-color: var(--vs-color-light-gray-5);
-}
-
-.btn-close:active,
-button.close:active {
-    --vs-button-background-color: var(--vs-color-light-gray-3);
-}
-
-.btn-close:disabled {
-    opacity: .5;
-    cursor: not-allowed;
-}
-
 .btn-group {
     display: inline-flex;
     gap: 0;

@@ -6,6 +6,8 @@
 @import './badges/styles.css';
 @import './breadcrumbs/styles.css';
 @import './buttons/styles.css';
+@import './buttons/close_button.css';
+@import './callouts/styles.css';
 @import './counters/styles.css';
 @import './progressbars/styles.css';
 @import './status/styles.css';

@@ -1,0 +1,100 @@
+.callout {
+    --vs-callout-border-radius: var(--vs-rounded-md);
+    --vs-callout-padding: var(--vs-spacing-4);
+    --vs-callout-font-size: var(--vs-font-size-base);
+    --vs-callout-line-height: var(--vs-line-height-base);
+    --vs-callout-font-weight: var(--vs-font-weight-base);
+    --vs-callout-background-color: var(--vs-color-white);
+    --vs-callout-color: var(--vs-color-mid-gray-1);
+    --vs-callout-border-color: var(--vs-color-light-gray-3);
+
+    --vs-callout-header-font-size: var(--vs-font-size-base);
+    --vs-callout-header-line-height: var(--vs-line-height-base);
+    --vs-callout-header-font-weight: var(--vs-font-weight-semibold);
+    --vs-callout-header-color: var(--vs-color-dark-gray-2);
+
+    --vs-callout-icon-padding: var(--vs-spacing-10);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--vs-callout-border-color);
+    border-radius: var(--vs-callout-border-radius);
+    background-color: var(--vs-callout-background-color);
+    color: var(--vs-callout-color);
+    font-size: var(--vs-callout-font-size);
+    font-weight: var(--vs-callout-font-weight);
+    line-height: var(--vs-callout-line-height);
+    padding: var(--vs-callout-padding);
+}
+
+.callout header {
+    font-size: var(--vs-callout-header-font-size);
+    font-weight: var(--vs-callout-header-font-weight);
+    line-height: var(--vs-callout-header-line-height);
+    color: var(--vs-callout-header-color);
+    margin-bottom: var(--vs-spacing-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.callout header .actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--vs-spacing-3);
+}
+
+.callout main {
+    margin-bottom: var(--vs-spacing-3);
+}
+
+.callout footer .actions,
+::slotted(.callout footer .actions)
+{
+    display: flex;
+    align-items: center;
+    gap: var(--vs-spacing-3);
+}
+
+.callout.callout-icon .icon {
+    position: absolute;
+    left: 0;
+    height: var(--vs-spacing-6);
+    width: var(--vs-spacing-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.callout.callout-icon header,
+.callout.callout-icon main,
+.callout.callout-icon footer {
+    padding-left: var(--vs-callout-icon-padding);
+}
+
+.callout-gray {
+    --vs-callout-background-color: var(--vs-color-light-gray-5);
+}
+
+.callout-black {
+    --vs-callout-background-color: var(--vs-color-dark-gray-3);
+    --vs-callout-border-color: var(--vs-color-dark-gray-4);
+    --vs-callout-color: var(--vs-color-mid-gray-5);
+    --vs-callout-header-color: var(--vs-color-light-gray-5);
+}
+
+.callout-black .btn-close {
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.293031 1.29302C0.480558 1.10555 0.734866 1.00023 1.00003 1.00023C1.26519 1.00023 1.5195 1.10555 1.70703 1.29302L6.00003 5.58602L10.293 1.29302C10.3853 1.19751 10.4956 1.12133 10.6176 1.06892C10.7396 1.01651 10.8709 0.988924 11.0036 0.98777C11.1364 0.986616 11.2681 1.01192 11.391 1.0622C11.5139 1.11248 11.6255 1.18673 11.7194 1.28062C11.8133 1.37452 11.8876 1.48617 11.9379 1.60907C11.9881 1.73196 12.0134 1.86364 12.0123 1.99642C12.0111 2.1292 11.9835 2.26042 11.9311 2.38242C11.8787 2.50443 11.8025 2.61477 11.707 2.70702L7.41403 7.00002L11.707 11.293C11.8892 11.4816 11.99 11.7342 11.9877 11.9964C11.9854 12.2586 11.8803 12.5094 11.6948 12.6948C11.5094 12.8802 11.2586 12.9854 10.9964 12.9877C10.7342 12.99 10.4816 12.8892 10.293 12.707L6.00003 8.41402L1.70703 12.707C1.51843 12.8892 1.26583 12.99 1.00363 12.9877C0.741432 12.9854 0.49062 12.8802 0.305212 12.6948C0.119804 12.5094 0.0146347 12.2586 0.0123563 11.9964C0.0100779 11.7342 0.110873 11.4816 0.293031 11.293L4.58603 7.00002L0.293031 2.70702C0.10556 2.51949 0.000244141 2.26518 0.000244141 2.00002C0.000244141 1.73486 0.10556 1.48055 0.293031 1.29302Z' fill='%23F6F8F9'/%3E%3C/svg%3E%0A");
+}
+
+.callout-black .btn-close:hover {
+    --vs-button-background-color: var(--vs-color-mid-gray-1);
+}
+
+.callout-gradient {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFFEEB 0%, #F5FFF8 48.96%, #F6FCFF 100%);
+}

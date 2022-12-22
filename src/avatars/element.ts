@@ -1,8 +1,7 @@
-import { html, LitElement, unsafeCSS } from 'lit';
+import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 
-import style from './styles.css?inline';
 
 
 export type AvatarSize = '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';

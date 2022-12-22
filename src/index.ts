@@ -4,6 +4,7 @@ export * from './avatars';
 export * from './badges';
 export * from './breadcrumbs';
 export * from './buttons';
+export * from './callouts';
 export * from './counters';
 export * from './progressbars';
 export * from './status';
