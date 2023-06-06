@@ -1,0 +1,835 @@
+<!doctype html>
+<html class="h-full">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="msapplication-TileColor" content="#206bc4" />
+    <meta name="theme-color" content="rgb(15,23,42)" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="antialiased h-full" x-cloak x-data="{}">
+    <div class="max-w-3xl mx-auto space-y-10 pb-20">
+
+        <div>
+            <h3>Alerts</h3>
+            <div class="alert alert-success">
+                Internos reprehenderit perspiciatis commodi et omnis impedit.
+            </div>
+            <div class="alert alert-warning">
+                Internos reprehenderit perspiciatis commodi et omnis impedit.
+            </div>
+            <div class="alert alert-error">
+                Internos reprehenderit perspiciatis commodi et omnis impedit.
+            </div>
+            <div class="alert alert-info">
+                Internos reprehenderit perspiciatis commodi et omnis impedit.
+            </div>
+        </div>
+
+        <div>
+            <h3>Avatars</h3>
+            <div class="space-x-3 mb-4 flex items-end">
+                <div class="avatar avatar-sm">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-md">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-lg">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-sm">
+                    <svg class="h-1/2 w-1/2 text-secondary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="avatar avatar-md">
+                    <svg class="h-1/2 w-1/2 text-secondary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="avatar avatar-lg">
+                    <svg class="h-1/2 w-1/2 text-secondary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="avatar avatar-xl">
+                    <svg class="h-1/2 w-1/2 text-secondary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h1 1 14H20z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="space-x-3 flex items-end">
+                <div class="avatar avatar-md avatar-status avatar-status-green">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-md avatar-status avatar-status-yellow">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-md avatar-status avatar-status-red">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+                <div class="avatar avatar-md avatar-status after:bg-blue-600">
+                    <img
+                        src="https://images.unsplash.com/photo-1645378999013-95abebf5f3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Badges</h3>
+            <div class="space-x-3 flex items-end">
+                <div class="badge">Badge</div>
+                <div class="badge badge-red">Badge</div>
+                <div class="badge badge-yellow">Badge</div>
+                <div class="badge badge-green">Badge</div>
+                <div class="badge badge-blue">Badge</div>
+                <div class="badge badge-indigo">Badge</div>
+                <div class="badge badge-purple">Badge</div>
+                <div class="badge badge-pink">Badge</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Buttons</h3>
+            <div class="space-x-3 mb-4 flex items-end">
+                <button type="button" class="btn">Button</button>
+                <button type="button" class="btn btn-accent">Button</button>
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="button" class="btn btn-danger">Button</button>
+                <button type="button" class="btn btn-warning">Button</button>
+                <button type="button" class="btn btn-success">Button</button>
+                <button type="button" class="btn btn-text">Button</button>
+            </div>
+
+            <div class="space-x-3 flex mb-4 items-end">
+                <button type="button" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+                <button type="button" class="btn btn-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    Button
+                </button>
+            </div>
+
+            <div class="space-x-3 flex items-end mt-5">
+                <button class="btn btn-icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path
+                            d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path
+                            d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="space-x-3 flex items-end mt-5">
+                <button class="btn btn-block btn-accent">Block button</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Dividers</h3>
+            <div class="space-y-3">
+                <div class="divider"></div>
+                <div class="divider-center">More</div>
+                <div class="divider-left">More</div>
+                <div class="divider-right">More</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Modal</h3>
+            <div class="space-y-3 w-full py-10">
+                <div class="modal-dialog modal-dialog-inline">
+                    <div class="modal">
+                        <header>Export device data to CSV</header>
+                        <main>Export a snapshot of the current state of your tailnet. This does not include historical
+                            data.
+                        </main>
+                        <footer>
+                            <button class="btn btn-accent">Download</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Pagination</h3>
+            <div class="space-y-3 relative">
+                <div class="pagination">
+                    <div class="pagination-info">Showing 1-10 of 100 results.</div>
+                    <div class="pagination-controls">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l14 0"></path>
+                                <path d="M5 12l6 6"></path>
+                                <path d="M5 12l6 -6"></path>
+                            </svg>
+                            Previous
+                        </a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span disabled>...</span>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">
+                            Next
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l14 0"></path>
+                                <path d="M13 18l6 -6"></path>
+                                <path d="M13 6l6 6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Progress</h3>
+            <div class="space-y-3 mb-4 relative">
+                <div class="progress progress-xxs">
+                    <div class="progress-bar" style="width: 42%"></div>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar" style="width: 42%"></div>
+                </div>
+                <div class="progress progress-sm">
+                    <div class="progress-bar" style="width: 42%"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 42%"></div>
+                </div>
+                <div class="progress progress-lg">
+                    <div class="progress-bar" style="width: 42%"></div>
+                </div>
+            </div>
+
+            <h4>Intermediate</h4>
+            <div class="space-y-3 mb-4 relative">
+                <div class="progress progress-indeterminate progress-xxs">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="progress progress-indeterminate progress-xs">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="progress progress-indeterminate progress-sm">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="progress progress-indeterminate progress-md">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="progress progress-indeterminate progress-lg">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <h4>Square</h4>
+            <div class="space-y-3 relative">
+                <div class="progress progress-square">
+                    <div class="progress-bar" style="width: 42px"></div>
+                </div>
+                <div class="progress progress-square progress-indeterminate">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <h4>Colored</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-red-500" style="width: 42%"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-green-500" style="width: 42%"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>Tabs</h3>
+            <div>
+
+                <div class="tabs mb-4">
+                    <div class="tab">Tab</div>
+                    <div class="tab active">Active tab</div>
+                    <div class="tab disabled">Disabled tab</div>
+                    <div class="tab">
+                        Badge <span class="badge">8</span>
+                    </div>
+                    <div class="tab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-2"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                            </path>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        </svg>
+                        Icon
+                    </div>
+                </div>
+
+
+                <div class="tabs tabs-pills mb-4">
+                    <div class="tab">Tab</div>
+                    <div class="tab active">Active tab</div>
+                    <div class="tab disabled">Disabled tab</div>
+                    <div class="tab">
+                        Badge <span class="badge">8</span>
+                    </div>
+                    <div class="tab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-2"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                            </path>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        </svg>
+                        Icon
+                    </div>
+                </div>
+
+                <div class="tabs tabs-bg mb-4">
+                    <div class="tab">Tab</div>
+                    <div class="tab active">Active tab</div>
+                    <div class="tab disabled">Disabled tab</div>
+                    <div class="tab">
+                        Badge <span class="badge">8</span>
+                    </div>
+                    <div class="tab">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-2"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                            </path>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        </svg>
+                        Icon
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Table</h3>
+            <div class="space-y-3 relative">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>me@example.com</td>
+                            <td>Root</td>
+                            <td>1 Jan</td>
+                            <td>
+                                <div class="table-actions">
+                                    <a class="link" href="#">Edit</a>
+                                    <button class="btn btn-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-settings-2" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                                            </path>
+                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>me@example.com</td>
+                            <td>Root</td>
+                            <td>1 Jan</td>
+                            <td>
+                                <div class="table-actions">
+                                    <a class="link" href="#">Edit</a>
+                                    <button class="btn btn-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-settings-2" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                                            </path>
+                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>me@example.com</td>
+                            <td>Root</td>
+                            <td>1 Jan</td>
+                            <td>
+                                <div class="table-actions">
+                                    <a href="#" class="link">Edit</a>
+                                    <button class="btn btn-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-settings-2" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
+                                            </path>
+                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3>Checkboxes</h3>
+            <div class="space-y-3 relative">
+                <div class="form-check">
+                    <input type="checkbox" id="check" checked>
+                    <label for="check"> Checkbox </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="check" disabled checked>
+                    <label for="check"> Checkbox </label>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="check" checked>
+                        <label for="check"> Checkbox </label>
+                    </div>
+                    <div class="form-help">This is a help message.</div>
+                    <div class="form-errors">This is an error message.</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Toggles</h3>
+            <div class="space-x-3 mb-3">
+                <input type="checkbox" class="input-toggle input-toggle-sm" checked>
+                <input type="checkbox" class="input-toggle" checked>
+            </div>
+            <div class="space-x-3">
+                <input type="checkbox" class="input-toggle input-toggle-sm" disabled>
+                <input type="checkbox" class="input-toggle" disabled>
+            </div>
+        </div>
+
+        <div>
+            <h3>Radio</h3>
+            <div class="space-y-3 relative">
+                <div class="form-check">
+                    <input type="radio" id="radio" name="radio" checked>
+                    <label for="radio"> Checkbox </label>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="radio" id="radio3" name="radio">
+                        <label for="radio3"> Checkbox </label>
+                    </div>
+                    <div class="form-help">This is a help message.</div>
+                    <div class="form-errors">This is an error message.</div>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="radio2" name="radio2" disabled checked>
+                    <label for="radio2"> Disabled Checkbox </label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Inputs</h3>
+            <div class="space-y-3 relative">
+                <div class="form-group">
+                    <label for="text">Text Input</label>
+                    <input type="text" id="text" placeholder="Enter text here...">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Textarea Input</label>
+                    <textarea id="textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="select">Select Input</label>
+                    <select id="select">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="text2">Text Input</label>
+                    <input type="text" id="text2" placeholder="Enter text here..." disabled>
+                </div>
+                <div class="form-group">
+                    <label for="text3">Text Input</label>
+                    <input type="text" id="text3" placeholder="Enter text here...">
+                    <div class="form-help">This is a help message.</div>
+                    <div class="form-errors">This is an error message.</div>
+                </div>
+                <div class="flex items-center gap-1">
+                    <input type="text" placeholder="Enter text here...">
+                    <button type="button" class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Breadcrumbs</h3>
+            <div class="space-y-3 relative">
+                <nav class="breadcrumbs">
+                    <uL>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <span class="text-slate-400">/</span>
+                            <a href="#">Components</a>
+                        </li>
+                        <li>
+                            <span class="text-slate-400">/</span>
+                            <a href="#">Breadcrumb</a>
+                        </li>
+                    </uL>
+                </nav>
+                <nav class="breadcrumbs">
+                    <uL>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <svg class="h-6 w-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <a href="#">Components</a>
+                        </li>
+                        <li>
+                            <svg class="h-6 w-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <a href="#">Breadcrumb</a>
+                        </li>
+                    </uL>
+                </nav>
+            </div>
+        </div>
+
+        <div>
+            <h3>List menu</h3>
+            <div class="space-y-3 relative">
+                <div class="w-64">
+                    <div class="list-menu">
+                        <div class="list-menu-item">Simple item</div>
+                        <div class="list-menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                            With left icon
+                        </div>
+                        <div class="list-menu-item">
+                            <span>With right icon</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="list-menu-item danger">
+                            Delete
+                        </div>
+                        <div class="list-menu-item disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                            Disabled
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Dropdown menu</h3>
+            <div class="space-y-3 relative">
+                <div class="dropdown">
+                    <div class="list-menu">
+                        <a href="#" class="list-menu-item">A link</a>
+                        <button class="list-menu-item">A button</button>
+                        <div class="list-menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                            With left icon
+                        </div>
+                        <div class="list-menu-item">
+                            <span>With right icon</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="list-menu-item danger">
+                            Delete
+                        </div>
+                        <div class="list-menu-item disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-4 w-4">
+                                <path
+                                    d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                </path>
+                                <path
+                                    d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                </path>
+                            </svg>
+                            Disabled
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Dropdown button</h3>
+            <div class="space-y-3 relative">
+                <button class="btn btn-primary relative" x-data="{open: false}" @click="open = !open"
+                    @click.outside="open = false">
+                    <span>Open menu</span>
+                    <div class="dropdown animated absolute top-10 left-0" :class="{open}">
+                        <div class="list-menu">
+                            <a href="#" class="list-menu-item">A link</a>
+                            <div class="list-menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-4 w-4">
+                                    <path
+                                        d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                    </path>
+                                    <path
+                                        d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                    </path>
+                                </svg>
+                                With left icon
+                            </div>
+                            <div class="list-menu-item">
+                                <span>With right icon</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-4 w-4">
+                                    <path
+                                        d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                    </path>
+                                    <path
+                                        d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="list-menu-item disabled">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-4 w-4">
+                                    <path
+                                        d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z">
+                                    </path>
+                                    <path
+                                        d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z">
+                                    </path>
+                                </svg>
+                                Disabled
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Toasts</h3>
+            <div class="space-y-3 relative">
+                <div class="toast">
+                    Your item has been saved.
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M18 6l-12 12"></path>
+                            <path d="M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="toast toast-success">
+                    Your item has been saved.
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M18 6l-12 12"></path>
+                            <path d="M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="toast toast-danger">
+                    Error saving your data.
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M18 6l-12 12"></path>
+                            <path d="M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
